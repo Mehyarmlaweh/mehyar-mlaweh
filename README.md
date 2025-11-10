@@ -1,55 +1,45 @@
----
-layout: default
-title: Mehyar Mlaweh's Portfolio
----
-
-# Mehyar Mlaweh
-
-Welcome to my personal portfolio! This website showcases my projects, skills, and experiences.
+# Mehyar Mlaweh – AI Researcher & PhD Candidate  
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?style=flat&logo=linkedin&logoColor=white)](https://linkedin.com/in/mehyar-mlaweh) [![GitHub](https://img.shields.io/badge/GitHub-%23121011.svg?style=flat&logo=github&logoColor=white)](https://github.com/mehyarmlaweh) [![Upwork](https://img.shields.io/badge/Upwork-%236FDA44.svg?style=flat&logo=upwork&logoColor=white)](https://www.upwork.com/freelancers/~0128b14d14dfc2b85d) [![X](https://img.shields.io/badge/X-%23000000.svg?style=flat&logo=x&logoColor=white)](https://x.com/MehyarMlaweh)  
+**Email**: [mehyar.mlaweh@dauphine.eu](mailto:mehyar.mlaweh@dauphine.eu) | **Location**: Paris, France  
 
 ---
 
-## About Me
+## Summary  
+Passionate about **artificial intelligence and data science research**, I combine **scientific rigor** with **technical expertise** to develop **innovative solutions** in **drug discovery**, **generative AI**, and **large language models**.
 
-I am a passionate developer with experience in Python, Data Science, Web Development, and Machine Learning. I love creating solutions that make a difference.
-
----
-
-## Projects
-
-### ![Project 1 Banner](https://via.placeholder.com/800x200.png?text=Project+1)
-**Project Name:** My Awesome Project 1  
-**Description:** A brief description of your project goes here. This project involved building a web app using Flask and deploying it on AWS.  
-**Technologies:** Python, Flask, AWS  
-**GitHub:** [View Project on GitHub](https://github.com/username/project1)
 
 ---
 
-### ![Project 2 Banner](https://via.placeholder.com/800x200.png?text=Project+2)
-**Project Name:** My Awesome Project 2  
-**Description:** A brief description of your project goes here. This project involved building a machine learning model to predict house prices.  
-**Technologies:** Python, Scikit-Learn, Pandas  
-**GitHub:** [View Project on GitHub](https://github.com/username/project2)
+## Publications – Under Review  
+
+> **BeeRNA**: Tertiary Structure-Based RNA Inverse Folding Using Artificial Bee Colony  
+> *Mlaweh, M., Alaya, I., & Cazenave, T. (2025)*  
+> Submitted to **AAAI-26 Workshop on AI for Drug Discovery**  
+> **Keywords**: RNA Structure, Swarm Intelligence, Inverse Folding  
+
+> *PDF will be shared upon acceptance.*
 
 ---
 
-## Skills
+## Skills  
 
-- Python
-- Data Science
-- Web Development
-- Machine Learning
-- NLP
-
----
-
-## CV
-
-You can download my CV [here](./path/to/your-cv.pdf).
+| Category | Tools & Technologies |
+|--------|----------------------|
+| **Programming** | Python, Java, C++, SQL, R, MATLAB |
+| **Data Science & ML** | PyTorch, Scikit-learn, fastAi, NumPy, Pandas, Streamlit |
+| **Deep Learning** | Transformers (BERT, GPT, CLIP, LLaMA, Qwen), RAG, Prompt Engineering |
+| **Cloud & DevOps** | AWS, GCP, Docker, RunPod, Vector DBs |
+| **ETL & Tools** | ClickView, Power BI, Talend |
 
 ---
 
-## Contact
+## Let’s Connect  
 
-Feel free to reach out to me on [LinkedIn](https://www.linkedin.com/in/your-profile) or [Twitter](https://twitter.com/your-profile).
+- **Portfolio**: [mehyar-mlaweh.github.io](https://mehyar-mlaweh.github.io)  
+- **Book a 30-min Call**: [calendly.com/mehyarmlaweh0](https://calendly.com/mehyarmlaweh0/30min)  
+- **Download Full CV (PDF)**: [Mehyar_Mlaweh_CV.pdf](assets/pdf/Mehyar_Mlaweh_CV.pdf)  
 
+---
+
+> **Last updated**: November 10, 2025  
+---
