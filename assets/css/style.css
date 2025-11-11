@@ -223,7 +223,18 @@ h6 {
 .nav-menu li:hover>a span {
   color: #fff;
 }
+/* ---- 1. More specific active style ---- */
+#header .nav-menu a.active,
+#header .nav-menu a.active:focus {
+  color: #fff !important;
+  background: #0563bb !important;
+}
 
+/* ---- 2. Keep the hover style unchanged ---- */
+.nav-menu li:hover > a {
+  color: #fff;
+  background: #0563bb;
+}
 .nav-menu a:hover,
 .nav-menu li:hover>a {
   width: 100%;
@@ -1530,3 +1541,86 @@ input:checked + .slider:before {
   transform:translateX(24px);
 }
 
+
+
+
+.skills-content .skills-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.skills-content .skills-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f8f9fa; /* Light gray background for each item */
+  border-radius: 5px;
+  padding: 10px 15px;
+  margin-bottom: 10px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  transition: all 0.3s ease; /* Smooth hover effect */
+}
+
+.skills-content .skills-list li:hover {
+  background-color: #e9ecef; /* Slightly darker on hover */
+}
+
+.skills-content .skill-name {
+  font-weight: 600;
+  flex: 1; /* Takes up most space */
+}
+
+.skills-content .skill-level {
+  font-size: 0.85rem;
+  padding: 0.4em 0.8em; /* Adjust badge padding */
+}
+
+/* Optional: Customize badge colors if needed */
+.bg-success { /* Expert */
+  background-color: #28a745 !important;
+}
+.bg-primary { /* Advanced */
+  background-color: #007bff !important;
+}
+.bg-info { /* Intermediate */
+  background-color: #17a2b8 !important;
+}
+
+
+.resume-item h4 {
+  margin-bottom: 8px;
+  color: #2c3e50;
+  font-weight: 600;
+}
+
+.resume-item h5 {
+  margin: 0 0 4px 0;
+  font-size: 1.1rem;
+  color: #1a5fb4; /* Highlight institution/company */
+  font-weight: 500;
+}
+
+.resume-item .date {
+  margin: 0 0 10px 0;
+  font-size: 0.95rem;
+  color: #6c757d; /* Subtle gray for dates */
+  font-style: italic;
+}
+
+.resume-item p:last-child {
+  margin-bottom: 0;
+}
+
+/* Optional: Add subtle border or spacing */
+.resume-item {
+  border-bottom: 1px solid #eee;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+}
+
+.resume-item:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
