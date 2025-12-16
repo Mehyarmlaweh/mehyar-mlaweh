@@ -50,6 +50,21 @@
       gap:12px;
       transition: all .15s ease;
     }
+/* Mobile fix: allow lecture titles to wrap nicely */
+@media (max-width: 768px) {
+  .resource-title {
+    white-space: normal;      /* allow wrapping */
+    overflow: visible;
+    text-overflow: unset;
+    max-width: 100%;
+    line-height: 1.3;
+  }
+}
+@media (max-width: 768px) {
+  .resource-item {
+    padding: 16px;
+  }
+}
 
     .resource-item:hover{
       box-shadow:0 8px 18px rgba(0,0,0,0.06);
