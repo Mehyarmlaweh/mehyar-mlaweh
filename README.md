@@ -10,11 +10,10 @@ Passionate about **artificial intelligence and data science research**, I combin
 
 ---
 
-## Publications – Under Review  
+## Publications – Accepetd at AAAI-26 Workshop on AI for Drug Discovery
 
 > **BeeRNA**: Tertiary Structure-Based RNA Inverse Folding Using Artificial Bee Colony  
 > *Mlaweh, M., Alaya, I., & Cazenave, T. (2025)*  
-> Submitted to **AAAI-26 Workshop on AI for Drug Discovery**  
 > **Keywords**: RNA Structure, Swarm Intelligence, Inverse Folding  
 
 > *PDF will be shared upon acceptance.*
