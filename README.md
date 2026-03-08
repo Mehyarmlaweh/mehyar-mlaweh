@@ -40,5 +40,5 @@ Passionate about **artificial intelligence and data science research**, I combin
 
 ---
 
-> **Last updated**: November 10, 2025  
+> **Last updated**: March, 2026  
 ---
