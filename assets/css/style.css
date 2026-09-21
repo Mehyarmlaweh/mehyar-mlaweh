@@ -1270,7 +1270,8 @@ strong {
   margin-top: 64px;
 }
 
-.process-label {
+.process-label,
+.sub-label {
   margin-bottom: 20px;
   font-family: var(--font-mono);
   font-size: 0.74rem;
@@ -1950,6 +1951,67 @@ strong {
   border-color: var(--btn-bg);
   color: var(--btn-ink);
   transform: rotate(-45deg);
+}
+
+.research-grid + .sub-label {
+  margin-top: clamp(56px, 7vw, 80px);
+}
+
+.themes {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.theme {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 28px;
+}
+
+.theme-icon {
+  display: grid;
+  place-items: center;
+  width: 48px;
+  height: 48px;
+  margin-bottom: 6px;
+  border-radius: 14px;
+  background: var(--accent-soft);
+  color: var(--accent);
+  transition: transform 0.5s var(--ease-out);
+}
+
+.theme:hover .theme-icon {
+  transform: rotate(-6deg) scale(1.05);
+}
+
+.theme-icon svg {
+  width: 26px;
+  height: 26px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.5;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.theme h3 {
+  font-size: 1.14rem;
+  letter-spacing: -0.018em;
+}
+
+.theme p {
+  font-size: 0.94rem;
+  color: var(--ink-2);
+}
+
+.theme .theme-meta {
+  margin-top: auto;
+  padding-top: 8px;
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  color: var(--ink-3);
 }
 
 /* --------------------------------------------------------------------------
@@ -2977,6 +3039,7 @@ strong {
   }
 
   .services-grid,
+  .themes,
   .tracks,
   .toolbox,
   .res-layout {
