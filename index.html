@@ -2,912 +2,1208 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Mehyar Mlaweh | AI Researcher & PhD Candidate</title>
-<link
-  rel="stylesheet"
-  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
-/>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Mehyar Mlaweh · AI Engineer &amp; PhD Researcher</title>
 
-  <!-- SEO & Social -->
-  <meta name="description"
-        content="Mehyar Mlaweh – PhD Candidate at LAMSADE (Paris Dauphine). Research on Monte Carlo Tree Search for molecule design, GenAI, RNA inverse folding." />
-  <meta name="keywords"
-        content="Mehyar Mlaweh, AI, Machine Learning, Drug Discovery, Monte Carlo Tree Search, RNA, GenAI, PhD, Paris Dauphine, LAMSADE" />
+  <!-- SEO & social -->
+  <meta name="description" content="Mehyar Mlaweh: AI engineer and PhD researcher at LAMSADE (Université Paris-Dauphine – PSL). LLM fine-tuning, RAG and AI agents, computer vision, and Monte Carlo Tree Search for molecule design. Open to freelance projects." />
   <meta name="author" content="Mehyar Mlaweh" />
-  <meta property="og:title" content="Mehyar Mlaweh – AI Researcher" />
-  <meta property="og:description" content="PhD Candidate at LAMSADE, AI for Drug Discovery & Generative AI." />
-  <meta property="og:image" content="assets/img/og-image.jpg" />
-  <meta property="og:url" content="https://mehyar-mlaweh.github.io" />
+  <link rel="canonical" href="https://mehyar-mlaweh.github.io/" />
+  <meta name="theme-color" content="#FAFAF8" media="(prefers-color-scheme: light)" />
+  <meta name="theme-color" content="#0B0C0B" media="(prefers-color-scheme: dark)" />
   <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://mehyar-mlaweh.github.io/" />
+  <meta property="og:title" content="Mehyar Mlaweh · AI Engineer &amp; PhD Researcher" />
+  <meta property="og:description" content="AI engineer by trade, researcher by nature. LLM fine-tuning, RAG &amp; agents, computer vision, and MCTS for molecule design." />
+  <meta property="og:image" content="https://mehyar-mlaweh.github.io/assets/img/og-image.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:site" content="@MehyarMlaweh" />
 
-  <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon" />
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
+  <!-- Icons -->
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml" />
+  <link rel="icon" href="assets/img/favicon-32.png" sizes="32x32" type="image/png" />
+  <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png" />
 
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&family=Raleway:wght@300;400;600;700&family=Poppins:wght@300;400;600;700&display=swap"
-        rel="stylesheet" />
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
 
-  <!-- Vendor CSS -->
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet" />
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
-  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet" />
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/style.css" />
 
-  <!-- Main CSS -->
-  <link href="assets/css/style.css" rel="stylesheet" />
+  <!-- Theme before first paint (avoids a flash of the wrong theme) -->
+  <script>
+    document.documentElement.classList.add("js");
+    try {
+      var t = localStorage.getItem("mm-theme");
+      if (t === "light" || t === "dark") document.documentElement.setAttribute("data-theme", t);
+    } catch (e) {}
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Mehyar Mlaweh",
+    "url": "https://mehyar-mlaweh.github.io/",
+    "image": "https://mehyar-mlaweh.github.io/assets/img/me.png",
+    "jobTitle": "AI Engineer & PhD Researcher",
+    "email": "mailto:mehyar.mlaweh@dauphine.eu",
+    "affiliation": { "@type": "Organization", "name": "LAMSADE, Université Paris-Dauphine – PSL" },
+    "alumniOf": { "@type": "CollegeOrUniversity", "name": "Université Paris-Dauphine – PSL" },
+    "address": { "@type": "PostalAddress", "addressLocality": "Paris", "addressCountry": "FR" },
+    "knowsAbout": ["Large language models", "LLM fine-tuning", "Retrieval-augmented generation", "Computer vision", "Monte Carlo Tree Search", "Drug discovery", "RNA design"],
+    "sameAs": [
+      "https://www.linkedin.com/in/mehyar-mlaweh",
+      "https://github.com/mehyarmlaweh",
+      "https://www.kaggle.com/mehyarmlaweh",
+      "https://x.com/MehyarMlaweh",
+      "https://www.upwork.com/freelancers/~0128b14d14dfc2b85d",
+      "https://huggingface.co/Mehyaar"
+    ]
+  }
+  </script>
 </head>
 
 <body>
-  <!-- Mobile Nav Toggle -->
-  <i class="bx bx-menu mobile-nav-toggle d-lg-none"></i>
+  <!-- ======= Icon sprite ======= -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+    <defs>
+      <symbol id="i-arrow-right" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+      <symbol id="i-arrow-up-right" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M8 7h9v9"/></symbol>
+      <symbol id="i-arrow-up" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V5M6 11l6-6 6 6"/></symbol>
+      <symbol id="i-calendar" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3.5" y="5" width="17" height="15.5" rx="2.5"/><path d="M3.5 10h17M8 3v4M16 3v4"/></symbol>
+      <symbol id="i-mail" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2.5"/><path d="m3.5 7 8.5 6 8.5-6"/></symbol>
+      <symbol id="i-download" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4v11M7 10l5 5 5-5M5 20h14"/></symbol>
+      <symbol id="i-lock" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="4.5" y="10.5" width="15" height="10" rx="2.5"/><path d="M8 10.5V8a4 4 0 0 1 8 0v2.5"/></symbol>
+      <symbol id="i-copy" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="8.5" y="8.5" width="12" height="12" rx="2.5"/><path d="M15.5 8.5V6a2.5 2.5 0 0 0-2.5-2.5H6A2.5 2.5 0 0 0 3.5 6v7A2.5 2.5 0 0 0 6 15.5h2.5"/></symbol>
+      <symbol id="i-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12.5 4.5 4.5L19 7.5"/></symbol>
+      <symbol id="i-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2.5v2M12 19.5v2M4.6 4.6 6 6M18 18l1.4 1.4M2.5 12h2M19.5 12h2M4.6 19.4 6 18M18 6l1.4-1.4"/></symbol>
+      <symbol id="i-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5Z"/></symbol>
+      <symbol id="i-menu" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M4 9h16M4 15h16"/></symbol>
+      <symbol id="i-close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M6 6l12 12M18 6 6 18"/></symbol>
+      <symbol id="i-pin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21Z"/><circle cx="12" cy="9.5" r="2.5"/></symbol>
+      <symbol id="i-file" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8Z"/><path d="M14 3v5h5M9 13h6M9 17h4"/></symbol>
+      <symbol id="i-database" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5.5" rx="7.5" ry="2.8"/><path d="M4.5 5.5v13c0 1.55 3.36 2.8 7.5 2.8s7.5-1.25 7.5-2.8v-13M4.5 12c0 1.55 3.36 2.8 7.5 2.8s7.5-1.25 7.5-2.8"/></symbol>
+      <symbol id="i-package" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20.5 7.5 12 3 3.5 7.5v9L12 21l8.5-4.5Z"/><path d="M3.5 7.5 12 12l8.5-4.5M12 12v9"/></symbol>
+      <symbol id="i-play" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="m10 8.5 5.5 3.5-5.5 3.5Z"/></symbol>
+      <symbol id="i-star" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.8l2.83 5.73 6.32.92-4.58 4.46 1.08 6.3L12 17.25l-5.65 2.96 1.08-6.3L2.85 9.45l6.32-.92Z"/></symbol>
+      <symbol id="i-briefcase" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="7" width="18" height="13" rx="2.5"/><path d="M9 7V5.5A1.5 1.5 0 0 1 10.5 4h3A1.5 1.5 0 0 1 15 5.5V7M3 12.5h18"/></symbol>
+      <symbol id="i-flask" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 3h6M10 3v6L4.8 18.2A1.9 1.9 0 0 0 6.5 21h11a1.9 1.9 0 0 0 1.7-2.8L14 9V3"/><path d="M7.5 14h9"/></symbol>
+      <symbol id="i-globe" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"/></symbol>
+      <symbol id="i-clock" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></symbol>
+      <!-- Brand marks -->
+      <symbol id="i-github" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .3a12 12 0 0 0-3.8 23.38c.6.12.83-.26.83-.57L9 21.07c-3.34.72-4.04-1.61-4.04-1.61-.55-1.39-1.34-1.76-1.34-1.76-1.08-.74.09-.73.09-.73 1.2.09 1.83 1.24 1.83 1.24 1.07 1.83 2.81 1.3 3.5 1 .1-.78.42-1.31.76-1.61-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.14-.3-.54-1.52.1-3.18 0 0 1-.32 3.3 1.23a11.5 11.5 0 0 1 6 0c2.28-1.55 3.29-1.23 3.29-1.23.64 1.66.24 2.88.12 3.18a4.65 4.65 0 0 1 1.23 3.22c0 4.61-2.8 5.62-5.48 5.92.42.36.81 1.1.81 2.22l-.01 3.29c0 .31.2.69.82.57A12 12 0 0 0 12 .3"/></symbol>
+      <symbol id="i-linkedin" viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28ZM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13ZM7.12 20.45H3.56V9h3.56v11.45ZM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0Z"/></symbol>
+      <symbol id="i-x" viewBox="0 0 24 24" fill="currentColor"><path d="M18.9 1.15h3.68l-8.04 9.19L24 22.85h-7.41l-5.8-7.58-6.64 7.58H.47l8.6-9.83L0 1.15h7.59l5.24 6.93 6.07-6.93Zm-1.29 19.5h2.04L6.49 3.24H4.3l13.31 17.4Z"/></symbol>
+      <symbol id="i-kaggle" viewBox="0 0 24 24" fill="currentColor"><path d="M18.83 23.86c-.02.09-.12.14-.28.14h-3.14c-.19 0-.35-.08-.49-.25l-5.18-6.59-1.45 1.37v5.12c0 .23-.12.35-.35.35H5.5c-.23 0-.35-.12-.35-.35V.35c0-.23.12-.35.35-.35h2.44c.23 0 .35.12.35.35v14.34l6.2-6.27c.17-.16.33-.25.5-.25h3.24c.14 0 .23.06.28.18.05.15.04.26-.03.32l-6.56 6.34 6.84 8.51c.1.1.12.21.07.36"/></symbol>
+      <symbol id="i-upwork" viewBox="0 0 24 24" fill="currentColor"><path d="M18.56 13.16c-1.1 0-2.13-.47-3.07-1.23l.23-1.08.01-.04c.2-1.14.85-3.06 2.83-3.06a2.7 2.7 0 0 1 0 5.41Zm0-8.14c-2.54 0-4.5 1.65-5.3 4.37-1.23-1.84-2.15-4.04-2.69-5.9H7.83v7.12a2.55 2.55 0 0 1-5.1 0V3.49H0v7.12a5.28 5.28 0 0 0 10.56 0v-1.2c.53 1.11 1.19 2.23 1.98 3.23l-1.67 7.87h2.8l1.2-5.71c1.07.68 2.29 1.11 3.69 1.11a5.45 5.45 0 0 0 0-10.9Z"/></symbol>
+    </defs>
+  </svg>
 
-  <!-- ======= Header ======= -->
-  <header id="header" class="d-flex flex-column justify-content-center">
-    <nav id="navbar" class="navbar nav-menu">
-      <ul>
-        <li><a href="#hero" class="nav-link scrollto active"><i class="bx bx-home"></i> <span>Home</span></a></li>
-        <li><a href="#about" class="nav-link scrollto"><i class="bx bx-user"></i> <span>About</span></a></li>
-        <li><a href="#research" class="nav-link scrollto"><i class="bx bx-brain"></i> <span>Research</span></a></li>
-        <li><a href="#experience" class="nav-link scrollto"><i class="bx bx-briefcase"></i> <span>Experience</span></a></li>
-        <li><a href="#education" class="nav-link scrollto"><i class="bx bx-book"></i> <span>Education</span></a></li>
-              <li><a href="#teaching" class="nav-link scrollto"><i class="bx bx-chalkboard"></i> <span>Teaching</span></a></li>
-        <li><a href="#projects" class="nav-link scrollto"><i class="bx bx-code-alt"></i> <span>Projects</span></a></li>
-        <li><a href="#publications" class="nav-link scrollto"><i class="bx bx-file"></i> <span>Publications</span></a></li>
+  <a class="skip-link" href="#main">Skip to content</a>
 
-        <li><a href="#awards" class="nav-link scrollto"><i class="bx bx-trophy"></i> <span>Awards</span></a></li>
-        <li><a href="#extracurricular" class="nav-link scrollto"><i class="bx bx-star"></i> <span>Extracurricular</span></a></li>
-        <li><a href="#testimonials-section" class="nav-link scrollto"><i class="bx bxs-quote-alt-left"></i> <span>Testimonials</span></a></li>
-        <li><a href="#contact" class="nav-link scrollto"><i class="bx bx-envelope"></i> <span>Contact</span></a></li>
+  <!-- ======= Navigation ======= -->
+  <header class="nav" id="nav">
+    <div class="container nav-inner">
+      <a class="brand" href="#hero" aria-label="Mehyar Mlaweh, back to top">
+        <svg class="brand-mark" viewBox="0 0 32 32" aria-hidden="true"><rect class="brand-bg" width="32" height="32" rx="9"/><path class="brand-m" d="M9 22.5V10l7 8.5 7-8.5v12.5"/><circle class="brand-dot" cx="16" cy="18.5" r="2.4"/></svg>
+        <span>Mehyar Mlaweh</span>
+      </a>
 
-      </ul>
-    </nav>
-  </header>
-  <!-- End Header -->
+      <nav class="nav-links" id="nav-links" aria-label="Primary">
+        <a href="#services">Services</a>
+        <a href="#projects">Work</a>
+        <a href="#research">Research</a>
+        <a href="#testimonials">Reviews</a>
+        <a href="#experience">Experience</a>
+        <a href="#about">About</a>
+      </nav>
 
-  <!-- ======= Hero Section ======= -->
-  <section id="hero" class="d-flex flex-column justify-content-center align-items-center">
-    <div class="container text-center" data-aos="zoom-in" data-aos-delay="100">
-      <h1>Mehyar Mlaweh</h1>
-      <p>I'm <span class="typed" data-typed-items="a PhD Candidate at LAMSADE, an AI Researcher, exploring Drug Discovery, a Generative AI Engineer, an Independent LLM Freelancer, an Avid Reader & F1 Enthusiast"></span></p>
-      <div class="social-links mt-4">
-        <a href="mailto:mehyar.mlaweh@dauphine.eu" aria-label="Email"><i class="bx bxl-gmail"></i></a>
-        <a href="https://www.linkedin.com/in/mehyar-mlaweh" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="bx bxl-linkedin"></i></a>
-        <a href="https://github.com/mehyarmlaweh" target="_blank" rel="noopener" aria-label="GitHub"><i class="bx bxl-github"></i></a>
-        <a href="https://www.kaggle.com/mehyarmlaweh" target="_blank" rel="noopener" aria-label="Kaggle"><i class="fab fa-kaggle"></i></a>
-        <a href="https://x.com/MehyarMlaweh" target="_blank" rel="noopener" aria-label="X (Twitter)"><i class="bx bxl-twitter"></i></a>
-        <a href="https://www.upwork.com/freelancers/~0128b14d14dfc2b85d?mp_source=share" target="_blank" rel="noopener" aria-label="Upwork"><i class="bx bx-briefcase"></i></a>
+      <div class="nav-actions">
+        <button class="icon-btn theme-toggle" type="button" aria-label="Toggle dark mode">
+          <svg class="icon i-moon" aria-hidden="true"><use href="#i-moon"/></svg>
+          <svg class="icon i-sun" aria-hidden="true"><use href="#i-sun"/></svg>
+        </button>
+        <a class="btn btn-primary btn-sm" href="#contact">Let's talk</a>
+        <button class="icon-btn nav-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="nav-links">
+          <svg class="icon i-menu" aria-hidden="true"><use href="#i-menu"/></svg>
+          <svg class="icon i-close" aria-hidden="true"><use href="#i-close"/></svg>
+        </button>
       </div>
     </div>
-  </section>
-  <!-- End Hero -->
+    <div class="progress" aria-hidden="true"></div>
+  </header>
+
   <main id="main">
 
-<!-- ======= About ======= -->
-<section id="about" class="about section-bg py-5">
-  <div class="container" data-aos="fade-up">
+    <!-- ======= Hero ======= -->
+    <section class="hero" id="hero">
+      <div class="container">
+        <div class="hero-grid">
+          <div class="hero-copy">
+            <a class="status" href="#contact" data-reveal>
+              <span class="status-dot" aria-hidden="true"></span>
+              <span>Open to freelance projects<span class="hide-sm"> &amp; research collaborations</span></span>
+            </a>
 
-    <div class="section-title text-center mb-5">
-      <h2>About</h2>
-      <p>Passionate AI researcher blending science and engineering</p>
-    </div>
+            <h1 class="hero-title" data-reveal style="--d:1"><span class="line">AI engineer <span class="nw">by trade.</span></span><span class="line"><em>Researcher</em> <span class="nw">by nature.</span></span></h1>
 
-    <div class="row align-items-center g-5">
-      <!-- Photo – Left on desktop, centered on mobile -->
-      <div class="col-lg-4 text-center text-lg-start">
-        <img src="assets/img/me.png"
-             class="img-fluid rounded-circle shadow-sm about-photo"
-             alt="Mehyar Mlaweh"
-             style="max-width: 260px; height: auto;">
-      </div>
+            <p class="hero-lead" data-reveal style="--d:2">
+              I'm Mehyar, a PhD researcher at <strong>LAMSADE, Université Paris-Dauphine – PSL</strong>,
+              and an AI engineer who fine-tunes large language models, builds RAG systems and ships them to the cloud.
+              I bring research rigor to production AI.
+            </p>
 
-      <!-- Text – Right on desktop -->
-      <div class="col-lg-8">
-        <div class="about-text">
-          <p class="lead">
-            I’m <strong>Mehyar Mlaweh</strong>, a <strong>PhD Candidate at LAMSADE Laboratory (Université Paris‑Dauphine – PSL)</strong>, 
-            supervised by <strong>Prof. Tristan Cazenave</strong>. My thesis focuses on 
-            <strong>Monte Carlo Tree Search for Molecule Design</strong>, combining computational chemistry and AI for next‑generation drug discovery.
-          </p>
-          <p>
-            I blend research rigor with engineering creativity across <strong>deep learning, molecular modeling, and symbolic reasoning</strong>. 
-            Outside the lab, I’m a paper reader, coffee lover, music enthusiast, and proud <strong>Formula 1 fan</strong>.
-          </p>
-          <div class="mt-4">
-        <a href="assets/docs/Curriculum_Vitae___Mehyar_MLAWEH___EV.pdf" 
-          target="_blank" 
-          class="btn btn-outline-primary btn-sm">
-          <i class="bx bx-download"></i> Download Full CV (PDF)
-        </a>
-      </div>
-        </div>
-      </div>
-    </div>
+            <p class="terminal-line" data-reveal style="--d:3">
+              <span class="prompt">~/now $</span>
+              <span>building</span>
+              <span class="rotator-wrap"><span class="rotator" data-words="LLM fine-tuning pipelines|RAG &amp; agent systems|vision-language models|MCTS for 3D molecule design">LLM fine-tuning pipelines</span><span class="caret" aria-hidden="true"></span></span>
+            </p>
 
-  </div>
-</section>
+            <div class="hero-cta" data-reveal style="--d:4">
+              <a class="btn btn-primary" href="https://calendly.com/mehyarmlaweh0/30min" target="_blank" rel="noopener" data-calendly>
+                <svg class="icon" aria-hidden="true"><use href="#i-calendar"/></svg>
+                Book a 30-min call
+              </a>
+              <a class="btn btn-ghost" href="#projects">
+                See my work
+                <svg class="icon arrow" aria-hidden="true"><use href="#i-arrow-right"/></svg>
+              </a>
+            </div>
 
-    <!-- ======= Research Focus ======= -->
-    <section id="research" class="research">
-      <div class="container" data-aos="fade-up">
-        <div class="section-title"><h2>Research Focus</h2></div>
-        <div class="row">
-          <div class="col-lg-6">
-            <h3>AI for Molecular Design</h3>
-            <p>Monte Carlo Tree Search & generative AI for 3D RNA/protein design. Reinforcement learning & probabilistic search to discover novel molecular architectures.</p>
+            <div class="socials" data-reveal style="--d:5">
+              <a href="https://github.com/mehyarmlaweh" target="_blank" rel="noopener" aria-label="GitHub"><svg class="icon" aria-hidden="true"><use href="#i-github"/></svg></a>
+              <a href="https://www.linkedin.com/in/mehyar-mlaweh" target="_blank" rel="noopener" aria-label="LinkedIn"><svg class="icon" aria-hidden="true"><use href="#i-linkedin"/></svg></a>
+              <a href="https://www.kaggle.com/mehyarmlaweh" target="_blank" rel="noopener" aria-label="Kaggle"><svg class="icon" aria-hidden="true"><use href="#i-kaggle"/></svg></a>
+              <a href="https://x.com/MehyarMlaweh" target="_blank" rel="noopener" aria-label="X (Twitter)"><svg class="icon" aria-hidden="true"><use href="#i-x"/></svg></a>
+              <a href="https://www.upwork.com/freelancers/~0128b14d14dfc2b85d" target="_blank" rel="noopener" aria-label="Upwork"><svg class="icon" aria-hidden="true"><use href="#i-upwork"/></svg></a>
+              <a href="mailto:mehyar.mlaweh@dauphine.eu" aria-label="Email"><svg class="icon" aria-hidden="true"><use href="#i-mail"/></svg></a>
+            </div>
           </div>
-          <div class="col-lg-6">
-            <h3>Generative AI & LLM Applications</h3>
-            <p>Multimodal systems (RAG, Vision-Language Models) applied to biomedical/chemical domains. End-to-end GenAI pipelines for automation and discovery.</p>
+
+          <!-- Fig. 1: MCTS over molecular space -->
+          <div class="hero-art" data-reveal style="--d:2">
+            <figure class="art-card">
+              <div class="art-head" aria-hidden="true">
+                <span class="dots"><i></i><i></i><i></i></span>
+                <span>mcts.search(molecule)</span>
+                <span class="live">running</span>
+              </div>
+
+              <svg class="anim" viewBox="0 0 440 410" role="img" aria-labelledby="fig1-title">
+                <title id="fig1-title">A Monte Carlo Tree Search tree whose highlighted path leads to a candidate molecule</title>
+                <text class="t-formula" x="14" y="24">UCT = Q + c·√(ln N / n)</text>
+
+                <!-- explored edges -->
+                <line class="t-edge" x1="220" y1="40" x2="90" y2="120"/>
+                <line class="t-edge" x1="220" y1="40" x2="350" y2="120"/>
+                <line class="t-edge" x1="90" y1="120" x2="50" y2="200"/>
+                <line class="t-edge" x1="90" y1="120" x2="125" y2="200"/>
+                <line class="t-edge" x1="220" y1="120" x2="185" y2="200"/>
+                <line class="t-edge" x1="350" y1="120" x2="350" y2="200"/>
+                <line class="t-edge" x1="255" y1="200" x2="222" y2="270"/>
+
+                <!-- search frontier -->
+                <line class="t-edge is-frontier" x1="50" y1="200" x2="34" y2="262"/>
+                <line class="t-edge is-frontier" x1="125" y1="200" x2="128" y2="262"/>
+                <line class="t-edge is-frontier" x1="185" y1="200" x2="180" y2="262"/>
+                <line class="t-edge is-frontier" x1="350" y1="200" x2="362" y2="262"/>
+                <line class="t-edge is-frontier" x1="350" y1="120" x2="410" y2="196"/>
+
+                <!-- selected path -->
+                <line class="t-edge is-sel" pathLength="1" style="--d:.3s" x1="220" y1="40" x2="220" y2="120"/>
+                <line class="t-edge is-sel" pathLength="1" style="--d:.75s" x1="220" y1="120" x2="255" y2="200"/>
+                <line class="t-edge is-sel" pathLength="1" style="--d:1.2s" x1="255" y1="200" x2="290" y2="270"/>
+                <path class="t-rollout" d="M290 279C301 287 279 297 290 307"/>
+
+                <!-- nodes -->
+                <circle class="t-node" cx="90" cy="120" r="5.5"/>
+                <circle class="t-node" cx="350" cy="120" r="5.5"/>
+                <circle class="t-node" cx="50" cy="200" r="5"/>
+                <circle class="t-node" cx="125" cy="200" r="5"/>
+                <circle class="t-node" cx="185" cy="200" r="5"/>
+                <circle class="t-node" cx="350" cy="200" r="5"/>
+                <circle class="t-node" cx="222" cy="270" r="5"/>
+                <circle class="t-node is-leaf" cx="34" cy="262" r="3"/>
+                <circle class="t-node is-leaf" cx="128" cy="262" r="3"/>
+                <circle class="t-node is-leaf" cx="180" cy="262" r="3"/>
+                <circle class="t-node is-leaf" cx="362" cy="262" r="3"/>
+                <circle class="t-node is-leaf" cx="410" cy="196" r="3"/>
+
+                <circle class="t-ring" cx="220" cy="40" r="8" style="--d:1.6s"/>
+                <circle class="t-ring" cx="220" cy="120" r="7" style="--d:2.7s"/>
+                <circle class="t-ring" cx="255" cy="200" r="7" style="--d:3.9s"/>
+                <circle class="t-ring" cx="290" cy="270" r="7" style="--d:5s"/>
+                <circle class="t-node is-sel" cx="220" cy="40" r="8"/>
+                <circle class="t-node is-sel" cx="220" cy="120" r="7"/>
+                <circle class="t-node is-sel" cx="255" cy="200" r="7"/>
+                <circle class="t-node is-sel" cx="290" cy="270" r="7"/>
+
+                <!-- statistics -->
+                <text class="t-label" x="234" y="35">s₀ · N 1,024</text>
+                <text class="t-label is-sel" x="232" y="124">Q .71</text>
+                <text class="t-label is-sel" x="267" y="204">Q .84</text>
+                <text class="t-label is-sel" x="302" y="274">Q .93</text>
+
+                <!-- candidate molecule -->
+                <g class="mol">
+                  <circle class="mol-halo" cx="290" cy="338" r="46"/>
+                  <path class="mol-bond" d="M290 314 310.8 326v24L290 362l-20.8-12v-24Z"/>
+                  <path class="mol-bond" d="M305.6 330v16M288 355l-11.7-6.8M276.3 327.8 288 321"/>
+                  <path class="mol-bond" d="M310.8 326l13.9-8M269.2 350l-13.9 8M269.2 326l-12.1-7M310.8 350l12.1 7"/>
+                  <circle class="mol-atom" cx="331.6" cy="314" r="8"/>
+                  <text class="mol-atom-label" x="331.6" y="314">O</text>
+                  <circle class="mol-atom" cx="248.4" cy="362" r="8"/>
+                  <text class="mol-atom-label" x="248.4" y="362">N</text>
+                </g>
+                <text class="t-label" x="330" y="378">reward .93</text>
+
+                <!-- legend -->
+                <circle class="t-node is-sel" cx="20" cy="398" r="4"/>
+                <text class="t-label" x="30" y="401.5">selection</text>
+                <circle class="t-node" cx="104" cy="398" r="4"/>
+                <text class="t-label" x="114" y="401.5">expanded</text>
+                <path class="t-rollout" d="M182 398h18"/>
+                <text class="t-label" x="206" y="401.5">rollout</text>
+
+                <!-- travelling pulse -->
+                <circle class="t-pulse-glow" r="9" opacity="0">
+                  <animateMotion dur="4s" begin="1.6s" repeatCount="indefinite" path="M220 40L220 120L255 200L290 270L290 279C301 287 279 297 290 307"/>
+                  <animate attributeName="opacity" values="0;.22;.22;0" keyTimes="0;.04;.92;1" dur="4s" begin="1.6s" repeatCount="indefinite"/>
+                </circle>
+                <circle class="t-pulse" r="3.5" opacity="0">
+                  <animateMotion dur="4s" begin="1.6s" repeatCount="indefinite" path="M220 40L220 120L255 200L290 270L290 279C301 287 279 297 290 307"/>
+                  <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;.04;.92;1" dur="4s" begin="1.6s" repeatCount="indefinite"/>
+                </circle>
+              </svg>
+
+              <figcaption><b>Fig. 1</b>&nbsp; Monte Carlo Tree Search exploring chemical space: select, expand, roll out, back-propagate. This is the core of my PhD.</figcaption>
+            </figure>
+          </div>
+        </div>
+
+        <!-- Proof -->
+        <div class="stats">
+          <div class="stat" data-reveal>
+            <p class="stat-value"><span data-count="72">72</span><span class="unit">B</span></p>
+            <p class="stat-label">parameters in the largest LLM I've fine-tuned</p>
+          </div>
+          <div class="stat" data-reveal style="--d:1">
+            <p class="stat-value"><span data-count="5.0">5.0</span><span class="unit">★</span></p>
+            <p class="stat-label">client rating on my Upwork projects</p>
+          </div>
+          <div class="stat" data-reveal style="--d:2">
+            <p class="stat-value">AAAI<span class="unit">’26</span></p>
+            <p class="stat-label">first-author paper, workshop on AI for drug discovery</p>
+          </div>
+          <div class="stat" data-reveal style="--d:3">
+            <p class="stat-value"><span class="unit">#</span>1</p>
+            <p class="stat-label">valedictorian, M.Sc. AI &amp; Data Science, Paris-Dauphine – PSL</p>
+          </div>
+        </div>
+
+        <div class="marquee" data-reveal>
+          <p class="marquee-label">Along the way</p>
+          <div class="marquee-viewport">
+            <div class="marquee-track">
+              <ul>
+                <li>Université Paris-Dauphine – PSL</li>
+                <li>LAMSADE</li>
+                <li>PRAIRIE Institute</li>
+                <li>AAAI 2026</li>
+                <li>Wealthy Technology</li>
+                <li>VivaTech 2025</li>
+                <li>IRIT Toulouse</li>
+                <li>GRIFT · CRISTAL</li>
+                <li>Upwork</li>
+                <li>Gammal Tech</li>
+              </ul>
+              <ul aria-hidden="true">
+                <li>Université Paris-Dauphine – PSL</li>
+                <li>LAMSADE</li>
+                <li>PRAIRIE Institute</li>
+                <li>AAAI 2026</li>
+                <li>Wealthy Technology</li>
+                <li>VivaTech 2025</li>
+                <li>IRIT Toulouse</li>
+                <li>GRIFT · CRISTAL</li>
+                <li>Upwork</li>
+                <li>Gammal Tech</li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
-<!-- ======= Experience ======= -->
-<section id="experience" class="resume section-bg">
-  <div class="container" data-aos="fade-up">
-    <div class="section-title"><h2>Experience</h2></div>
-    <div class="row">
-      <div class="col-lg-12">
+    <!-- ======= Services ======= -->
+    <section class="section" id="services">
+      <div class="container">
+        <header class="section-head" data-reveal>
+          <p class="eyebrow"><span class="num">01</span><span class="rule"></span>Services</p>
+          <h2 class="section-title">What I can <em>build</em> for you</h2>
+          <p class="section-lead">From a first prototype to a model running in production, I handle the whole loop and measure everything the way a researcher would.</p>
+        </header>
 
-        <!-- PhD -->
-<div class="resume-item">
-  <h4>PhD Researcher</h4>
-  <h5>LAMSADE, Université Paris-Dauphine – PSL, Paris, France</h5>
-  <p class="date">Nov 2025 – Present</p>
-  <p>
-    Thesis: <strong>Monte Carlo Tree Search for Molecule Design</strong>. Focus on 3D RNA/protein structures for drug discovery.
-    <br>
-    PhD funded by <strong>PRAIRIE – Paris AI Research Institute</strong>.
-  </p>
-</div>
-
-
-        <!-- GenAI Engineer -->
-        <div class="resume-item">
-          <h4>Generative AI Engineer</h4>
-          <h5>Wealthy-Technology, Paris, France</h5>
-          <p class="date">Jun 2024 – Present</p>
-          <p>Big data, medical imaging, RAG, LLM deployment, AWS, vector DBs, end-to-end AI solutions.</p>
-        </div>
-
-        <!-- Freelance -->
-        <div class="resume-item">
-          <h4>AI Engineer (Freelance)</h4>
-          <h5>Upwork</h5>
-          <p class="date">Nov 2022 – Present</p>
-          <p>Automation tools, data analysis, Python scripting, RAG.</p>
-        </div>
-
-        <!-- Research Intern LAMSADE -->
-        <div class="resume-item">
-          <h4>Research Intern</h4>
-          <h5>LAMSADE, Université Paris-Dauphine – PSL</h5>
-          <p class="date">Feb 2025 – Aug 2025</p>
-          <p>RNA inverse folding, bioinformatics, sequence prediction, computational modeling.</p>
-        </div>
-
-        <!-- Python Instructor -->
-        <div class="resume-item">
-          <h4>Python Instructor</h4>
-          <h5>Dauphine Tunis</h5>
-          <p class="date">Summer 2024, 2025</p>
-        </div>
-
-        <!-- Research Intern IRIT -->
-        <div class="resume-item">
-          <h4>Research Intern</h4>
-          <h5>IRIT, Toulouse, France</h5>
-          <p class="date">May 2024 – Jun 2024</p>
-          <p>NLP, transformers (PLMs), legislative document analysis.</p>
-        </div>
-
-        <!-- GRIFT CRISTAL -->
-        <div class="resume-item">
-          <h4>Research Intern</h4>
-          <h5>GRIFT CRISTAL Laboratory, Tunis</h5>
-          <p class="date">Jan 2023 – Jun 2023</p>
-          <p>Density estimation, model evaluation, neural networks.</p>
-        </div>
-
-        <!-- Data Analyst -->
-        <div class="resume-item">
-          <h4>Data Analyst</h4>
-          <h5>Gammal Tech, Egypt</h5>
-          <p class="date">Jun 2022 – Sep 2022</p>
-          <p>Course creation, C/C++, DB management, Power BI.</p>
-        </div>
-
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ======= Education ======= -->
-<section id="education" class="resume">
-  <div class="container" data-aos="fade-up">
-    <div class="section-title"><h2>Education</h2></div>
-    <div class="row">
-      <div class="col-lg-12">
-
-        <div class="resume-item">
-          <h4>PhD in Artificial Intelligence</h4>
-          <h5>Université Paris-Dauphine – PSL, France</h5>
-          <p class="date">2025 – Present</p>
-        </div>
-
-        <div class="resume-item">
-          <h4>Master’s in Artificial Intelligence and Data Science</h4>
-          <h5>Université Paris-Dauphine – PSL</h5>
-          <p class="date">2023 – 2025</p>
-          <p><strong>Valedictorian</strong> (15.74/20) – Optimization, Algebra, Deep Learning, NLP, Generative AI, Computer Vision etc.</p>
-        </div>
-
-        <div class="resume-item">
-          <h4>Bachelor’s in Business Intelligence</h4>
-          <h5>IHEC Carthage</h5>
-          <p class="date">2020 – 2023</p>
-          <p>(16.79/20)</p>
-        </div>
-
-      </div>
-    </div>
-  </div>
-</section>
-<!-- ======= Teaching ======= -->
-<section id="teaching" class="resume section-bg">
-  <div class="container" data-aos="fade-up">
-
-    <div class="section-title">
-      <h2>Teaching</h2>
-      <p>University teaching & course materials</p>
-    </div>
-
-    <div class="resume-item bg-white p-4 rounded shadow-sm">
-      <h4>Teaching</h4>
-      <h5>Master IASD (Apprenticeship) — Université Paris-Dauphine – PSL</h5>
-      <p class="date">2025 – 2026</p>
-
-      <p class="mb-2">
-        <strong>Course:</strong> Deep Learning for Image Analysis
-      </p>
-
-      <a href="teaching.html" class="btn btn-outline-primary btn-sm mt-2">
-        <i class="bx bx-book-open"></i> View Resources
-      </a>
-    </div>
-
-  </div>
-</section>
-<!-- End Teaching -->
-
-<!-- ======= Projects ======= -->
-<section id="projects" class="portfolio">
-  <div class="container" data-aos="fade-up">
-
-    <div class="section-title">
-      <h2>Projects</h2>
-      <p>Explore my work across datasets, LLM fine-tuning, RAG systems, and classical ML</p>
-    </div>
-
-    <!-- Category Tabs -->
-    <ul class="portfolio-flters" data-aos="fade-up" data-aos-delay="100">
-      <li data-filter="*" class="filter-active">All</li>
-      <li data-filter=".filter-datasets">Datasets</li>
-      <li data-filter=".filter-finetuning">Fine-tuning & LLMs</li>
-      <li data-filter=".filter-rag">RAG & Multi-Agent</li>
-      <li data-filter=".filter-ml">ML & Data Science</li>
-    </ul>
-
-    <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
-<!-- ========= FINE-TUNING & LLMs ========= -->
-<div class="col-lg-4 col-md-6 portfolio-item filter-finetuning">
-  <div class="portfolio-wrap">
-    <img src="assets/img/projects/gemma3-4b.png" class="project-thumb img-fluid" alt="Gemma 3 Hate Speech Fine-Tuning">
-    <div class="portfolio-info">
-      <h4>Gemma-3 Hate Speech Classifier</h4>
-      <p>Fine-tuning Gemma-3 4B using LoRA & Unsloth to detect hate speech</p>
-      <div class="portfolio-links">
-        <a href="https://github.com/Mehyarmlaweh/gemma3-hateclassify-finetune" target="_blank" title="GitHub">
-          <i class="bx bxl-github"></i>
-        </a>
-      </div>
-    </div>
-  </div>
-</div>
-
-
-      <!-- ========= DATASETS ========= -->
-      <div class="col-lg-4 col-md-6 portfolio-item filter-datasets">
-        <div class="portfolio-wrap">
-          <img src="assets/img/projects/ner-resume-dataset.png" class="project-thumb img-fluid" alt="Annotated NER PDF Resumes">
-          <div class="portfolio-info">
-            <h4>Annotated NER PDF Resumes</h4>
-            <p>5,029 CVs with IT skills annotated via NER – JSON format for NLP training</p>
-            <div class="portfolio-links">
-              <a href="https://huggingface.co/datasets/Mehyaar/Annotated_NER_PDF_Resumes" target="_blank" title="Hugging Face"><i class="bx bx-data"></i></a>
-              <a href="https://github.com/mehyarmlaweh/ner-resume-dataset" target="_blank" title="GitHub"><i class="bx bxl-github"></i></a>
+        <div class="services-grid">
+          <article class="card service spot" data-reveal>
+            <div class="service-top">
+              <span class="service-icon" aria-hidden="true">
+                <svg viewBox="0 0 32 32"><rect x="4" y="5.5" width="17" height="5" rx="1.5"/><rect x="4" y="13.5" width="17" height="5" rx="1.5"/><rect x="4" y="21.5" width="17" height="5" rx="1.5"/><path d="M21 16h3"/><rect x="24" y="10.5" width="4.5" height="11" rx="1.5" fill="currentColor" fill-opacity=".2"/></svg>
+              </span>
+              <span class="service-num">01</span>
             </div>
-          </div>
-        </div>
-      </div>
+            <h3>LLM fine-tuning</h3>
+            <p>Adapt open models such as Qwen, Gemma or Llama to your domain, tone and tasks with LoRA and PEFT, from 4B up to 72B parameters on multi-GPU infrastructure.</p>
+            <ul class="tags"><li class="tag">LoRA · PEFT</li><li class="tag">Unsloth</li><li class="tag">Hugging Face</li><li class="tag">RunPod</li></ul>
+          </article>
 
-      <!-- ========= FINE-TUNING & LLMs ========= -->
-      <div class="col-lg-4 col-md-6 portfolio-item filter-finetuning">
-        <div class="portfolio-wrap">
-          <img src="assets/img/projects/qwen.png" class="project-thumb img-fluid" alt="Qwen-72B Arabic Islamic LLM">
-          <div class="portfolio-info">
-            <h4>Qwen-72B Arabic Islamic LLM</h4>
-            <p>72B Qwen fine-tuned on Arabic Islamic corpus (tafsir, hadith, fiqh) – RunPod multi-GPU</p>
-            <div class="portfolio-links">
-              <i class="bx bx-lock-alt text-muted"></i>
-              <span class="text-muted small ms-1">Private Upwork Project</span>
+          <article class="card service spot" data-reveal style="--d:1">
+            <div class="service-top">
+              <span class="service-icon" aria-hidden="true">
+                <svg viewBox="0 0 32 32"><rect x="4" y="4" width="14" height="18" rx="2"/><path d="M8 9h6M8 13h6M8 17h3"/><circle cx="21.5" cy="21.5" r="5"/><path d="m25.2 25.2 3.3 3.3"/></svg>
+              </span>
+              <span class="service-num">02</span>
             </div>
-          </div>
-        </div>
-      </div>
+            <h3>RAG &amp; AI agents</h3>
+            <p>Assistants that answer from your own documents and data: retrieval pipelines, vector databases and multi-agent workflows, served behind a clean API.</p>
+            <ul class="tags"><li class="tag">Vector DBs</li><li class="tag">FastAPI</li><li class="tag">Prompt engineering</li><li class="tag">AWS · GCP</li></ul>
+          </article>
 
-      <div class="col-lg-4 col-md-6 portfolio-item filter-finetuning">
-        <div class="portfolio-wrap">
-          <img src="assets/img/projects/medical.jpg" class="project-thumb img-fluid" alt="Medical Image Captioning">
-          <div class="portfolio-info">
-            <h4>Medical Image Captioning</h4>
-            <p>Vision-language models, AWS, vector DBs, fine-tuning</p>
-            <div class="portfolio-links">
-              <i class="bx bx-lock-alt text-muted"></i>
-              <span class="text-muted small ms-1">Private Work (Wealthy-Technology)</span>
+          <article class="card service spot" data-reveal>
+            <div class="service-top">
+              <span class="service-icon" aria-hidden="true">
+                <svg viewBox="0 0 32 32"><path d="M4 10V6a2 2 0 0 1 2-2h4M22 4h4a2 2 0 0 1 2 2v4M28 22v4a2 2 0 0 1-2 2h-4M10 28H6a2 2 0 0 1-2-2v-4"/><path d="M8 16s3-5.5 8-5.5 8 5.5 8 5.5-3 5.5-8 5.5S8 16 8 16Z"/><circle cx="16" cy="16" r="2.25"/></svg>
+              </span>
+              <span class="service-num">03</span>
             </div>
-          </div>
-        </div>
-      </div>
+            <h3>Computer vision &amp; multimodal</h3>
+            <p>Vision-language models for captioning, detection and segmentation, including medical imaging, from dataset curation to deployment.</p>
+            <ul class="tags"><li class="tag">PyTorch</li><li class="tag">VLMs</li><li class="tag">ViT · SAM</li><li class="tag">Docker</li></ul>
+          </article>
 
-      <!-- ========= RAG & MULTI-AGENT ========= -->
-      <div class="col-lg-4 col-md-6 portfolio-item filter-rag">
-        <div class="portfolio-wrap">
-          <img src="assets/img/projects/DataV.png" class="project-thumb img-fluid" alt="DataVizQA">
-          <div class="portfolio-info">
-            <h4>DataVizQA</h4>
-            <p>RAG-style data exploration – ask questions, get AI-generated plots & insights</p>
-            <div class="portfolio-links">
-              <a href="https://github.com/Mehyarmlaweh/DataVizQA" target="_blank" title="GitHub"><i class="bx bxl-github"></i></a>
-              <a href="https://viewyourdata.streamlit.app/" target="_blank" title="Live Demo"><i class="bx bx-link"></i></a>
+          <article class="card service spot" data-reveal style="--d:1">
+            <div class="service-top">
+              <span class="service-icon" aria-hidden="true">
+                <svg viewBox="0 0 32 32"><path d="M13 7l6.06 3.5v7L13 21l-6.06-3.5v-7Z"/><circle cx="13" cy="14" r="3"/><path d="M19.06 17.5 23.5 20M13 21v4.5"/><circle cx="25.6" cy="21.2" r="2.3"/><circle cx="13" cy="27.6" r="2.1"/></svg>
+              </span>
+              <span class="service-num">04</span>
             </div>
-          </div>
+            <h3>AI for science &amp; optimisation</h3>
+            <p>Search-based and generative methods (MCTS, reinforcement learning, metaheuristics, GNNs) for molecular design and hard combinatorial problems.</p>
+            <ul class="tags"><li class="tag">MCTS</li><li class="tag">PyTorch Geometric</li><li class="tag">RL</li><li class="tag">CUDA · HPC</li></ul>
+          </article>
+        </div>
+
+        <div class="process" data-reveal>
+          <p class="process-label">How I work</p>
+          <ol>
+            <li class="step">
+              <span class="step-num">01</span>
+              <h3>Scope</h3>
+              <p>A short call to pin down the problem, the data and what success looks like.</p>
+            </li>
+            <li class="step" style="--d:1">
+              <span class="step-num">02</span>
+              <h3>Prototype</h3>
+              <p>A working baseline, fast, evaluated against metrics we agree on up front.</p>
+            </li>
+            <li class="step" style="--d:2">
+              <span class="step-num">03</span>
+              <h3>Ship</h3>
+              <p>Clean, modular code, containerised and deployed on your cloud: AWS, GCP or Azure.</p>
+            </li>
+            <li class="step" style="--d:3">
+              <span class="step-num">04</span>
+              <h3>Hand over</h3>
+              <p>Documentation and a walkthrough so your team fully owns the result.</p>
+            </li>
+          </ol>
         </div>
       </div>
+    </section>
 
-      <div class="col-lg-4 col-md-6 portfolio-item filter-rag">
-        <div class="portfolio-wrap">
-          <img src="assets/img/projects/urban.png" class="project-thumb img-fluid" alt="Urban Bloom">
-          <div class="portfolio-info">
-            <h4>Urban Bloom</h4>
-            <p>Multi-agent RAG system for eco-friendly city planning – LLMs + FastAPI + GCP</p>
-            <div class="portfolio-links">
-              <a href="https://github.com/Mehyarmlaweh/Intelligent-City" target="_blank" title="GitHub"><i class="bx bxl-github"></i></a>
+    <!-- ======= Work ======= -->
+    <section class="section" id="projects">
+      <div class="container">
+        <header class="section-head section-head--split" data-reveal>
+          <div>
+            <p class="eyebrow"><span class="num">02</span><span class="rule"></span>Work</p>
+            <h2 class="section-title">Selected <em>work</em></h2>
+            <p class="section-lead">LLM fine-tuning, RAG systems, datasets and classical ML, from open-source projects to client work.</p>
+          </div>
+          <div class="filters" role="group" aria-label="Filter projects">
+            <button class="chip" type="button" data-filter="all" aria-pressed="true">All<span class="count"></span></button>
+            <button class="chip" type="button" data-filter="llm" aria-pressed="false">LLMs<span class="count"></span></button>
+            <button class="chip" type="button" data-filter="rag" aria-pressed="false">RAG &amp; agents<span class="count"></span></button>
+            <button class="chip" type="button" data-filter="data" aria-pressed="false">Datasets<span class="count"></span></button>
+            <button class="chip" type="button" data-filter="ml" aria-pressed="false">ML<span class="count"></span></button>
+          </div>
+        </header>
+
+        <!-- To add a project: copy an <article class="project"> block and set data-cat to llm, rag, data or ml. -->
+        <p class="swipe-hint" aria-hidden="true">Swipe to browse <svg class="icon"><use href="#i-arrow-right"/></svg></p>
+        <div class="work-grid">
+
+          <!-- Qwen-72B -->
+          <article class="card project spot is-featured" data-cat="llm" data-reveal>
+            <div class="cover" aria-hidden="true">
+              <svg viewBox="0 0 400 225">
+                <text class="c-text c-text-ink" x="80" y="36">qwen · 72B</text>
+                <text class="c-text" x="320" y="36" text-anchor="end">tafsir · hadith · fiqh</text>
+                <rect class="c-acc c-soft" x="80" y="48" width="26" height="26" rx="4"/>
+                <rect class="c-line c-surface" x="110" y="48" width="26" height="26" rx="4"/>
+                <rect class="c-acc c-soft" x="140" y="48" width="26" height="26" rx="4"/>
+                <rect class="c-line c-surface" x="170" y="48" width="26" height="26" rx="4"/>
+                <rect class="c-acc c-soft" x="200" y="48" width="26" height="26" rx="4"/>
+                <rect class="c-line c-surface" x="230" y="48" width="26" height="26" rx="4"/>
+                <rect class="c-acc c-soft" x="260" y="48" width="26" height="26" rx="4"/>
+                <rect class="c-line c-surface" x="290" y="48" width="26" height="26" rx="4"/>
+                <path class="c-faint" d="M93 74c0 26 14 26 14 52M123 74c0 26-16 26-16 52M153 74c0 26 16 26 16 52M183 74c0 26-14 26-14 52M213 74c0 26 18 26 18 52M243 74c0 26-12 26-12 52M273 74c0 26 20 26 20 52M303 74c0 26-10 26-10 52"/>
+                <g>
+                  <rect class="c-line c-surface" x="85" y="126" width="44" height="44" rx="8"/>
+                  <rect class="c-line c-surface" x="147" y="126" width="44" height="44" rx="8"/>
+                  <rect class="c-line c-surface" x="209" y="126" width="44" height="44" rx="8"/>
+                  <rect class="c-line c-surface" x="271" y="126" width="44" height="44" rx="8"/>
+                  <rect class="c-acc c-soft" x="97" y="138" width="20" height="20" rx="3"/>
+                  <rect class="c-acc c-soft" x="159" y="138" width="20" height="20" rx="3"/>
+                  <rect class="c-acc c-soft" x="221" y="138" width="20" height="20" rx="3"/>
+                  <rect class="c-acc c-soft" x="283" y="138" width="20" height="20" rx="3"/>
+                  <path class="c-faint" d="M85 138h-5M85 148h-5M85 158h-5M129 138h5M129 148h5M129 158h5M147 138h-5M147 148h-5M147 158h-5M191 138h5M191 148h5M191 158h5M209 138h-5M209 148h-5M209 158h-5M253 138h5M253 148h5M253 158h5M271 138h-5M271 148h-5M271 158h-5M315 138h5M315 148h5M315 158h5"/>
+                </g>
+                <path class="c-faint" d="M107 170v16M169 170v16M231 170v16M293 170v16M107 186h186"/>
+                <circle class="c-accfill" cx="107" cy="186" r="2.5"/>
+                <circle class="c-accfill" cx="169" cy="186" r="2.5"/>
+                <circle class="c-accfill" cx="231" cy="186" r="2.5"/>
+                <circle class="c-accfill" cx="293" cy="186" r="2.5"/>
+                <text class="c-text" x="80" y="208">sharded fine-tuning · multi-GPU</text>
+              </svg>
             </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- ========= ML & DATA SCIENCE ========= -->
-      <div class="col-lg-4 col-md-6 portfolio-item filter-ml">
-        <div class="portfolio-wrap">
-          <img src="assets/img/projects/plugin.png" class="project-thumb img-fluid" alt="PluginKernel">
-          <div class="portfolio-info">
-            <h4>PluginKernel</h4>
-            <p>Kernel density estimation Python package with Plugin smoothing</p>
-            <div class="portfolio-links">
-              <a href="https://pypi.org/project/PluginKernel/" target="_blank" title="PyPI"><i class="bx bxl-python"></i></a>
-              <a href="https://github.com/mehyarmlaweh/PluginKernel" target="_blank" title="GitHub"><i class="bx bxl-github"></i></a>
+            <div class="project-body">
+              <div class="project-meta"><span class="cat">LLM fine-tuning</span><span>Client · Upwork</span></div>
+              <h3>Qwen-72B Arabic Islamic LLM</h3>
+              <p>Fine-tuned a 72-billion-parameter Qwen model on a curated Arabic Islamic corpus (tafsir, hadith, fiqh), trained across a multi-GPU RunPod cluster.</p>
+              <ul class="tags"><li class="tag">Qwen 72B</li><li class="tag">Multi-GPU</li><li class="tag">RunPod</li><li class="tag">Arabic NLP</li></ul>
+              <div class="project-foot">
+                <span class="private"><svg class="icon" aria-hidden="true"><use href="#i-lock"/></svg>Private client work</span>
+                <a class="review-link" href="#testimonials"><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg>5.0 client review</a>
+              </div>
             </div>
-          </div>
-        </div>
-      </div>
+          </article>
 
-      <div class="col-lg-4 col-md-6 portfolio-item filter-ml">
-        <div class="portfolio-wrap">
-          <img src="assets/img/projects/twitter.jpg" class="project-thumb img-fluid" alt="Twitter Trend Analysis">
-          <div class="portfolio-info">
-            <h4>Twitter Trend Analysis</h4>
-            <p>Sentiment analysis on 15.4k tweets using Random Forest</p>
-            <div class="portfolio-links">
-              <a href="https://github.com/Mehyarmlaweh/Israel-Palestine-conflict-Twitter-Analysis" target="_blank" title="GitHub"><i class="bx bxl-github"></i></a>
+          <!-- Gemma-3 -->
+          <article class="card project spot" data-cat="llm" data-reveal style="--d:1">
+            <div class="cover" aria-hidden="true">
+              <svg viewBox="0 0 400 225">
+                <text class="c-text c-text-ink" x="60" y="38">gemma-3 · 4B</text>
+                <text class="c-text" x="340" y="38" text-anchor="end">LoRA · unsloth</text>
+                <rect class="c-line c-surface" x="60" y="56" width="104" height="104" rx="6"/>
+                <path class="c-faint" d="M86 56v104M112 56v104M138 56v104M60 82h104M60 108h104M60 134h104"/>
+                <text class="c-text" x="112" y="182" text-anchor="middle">W₀ frozen</text>
+                <text class="c-text c-text-ink" x="184" y="113" text-anchor="middle" font-size="18">+</text>
+                <rect class="c-acc c-soft" x="204" y="56" width="16" height="104" rx="4"/>
+                <path class="c-acc" d="M204 82h16M204 108h16M204 134h16" opacity=".45"/>
+                <text class="c-text c-text-acc" x="212" y="182" text-anchor="middle">B</text>
+                <rect class="c-acc c-soft" x="232" y="56" width="104" height="16" rx="4"/>
+                <path class="c-acc" d="M258 56v16M284 56v16M310 56v16" opacity=".45"/>
+                <text class="c-text c-text-acc" x="344" y="68">A</text>
+                <text class="c-text c-text-ink" x="232" y="108">h = W₀x + BAx</text>
+                <text class="c-text" x="232" y="130">rank r ≪ d</text>
+                <text class="c-text" x="232" y="152">only A, B are trained</text>
+              </svg>
             </div>
+            <div class="project-body">
+              <div class="project-meta"><span class="cat">LLM fine-tuning</span><span>Open source</span></div>
+              <h3>Gemma-3 hate-speech classifier</h3>
+              <p>Fine-tuned Gemma-3 4B with LoRA and Unsloth to detect hate speech.</p>
+              <ul class="tags"><li class="tag">Gemma 3</li><li class="tag">LoRA</li><li class="tag">Unsloth</li></ul>
+              <div class="project-foot">
+                <div class="project-links">
+                  <a class="plink" href="https://github.com/Mehyarmlaweh/gemma3-hateclassify-finetune" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-github"/></svg>Code</a>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Medical image captioning -->
+          <article class="card project spot" data-cat="llm" data-reveal>
+            <div class="cover" aria-hidden="true">
+              <svg viewBox="0 0 400 225">
+                <text class="c-text c-text-ink" x="56" y="36">vision-language</text>
+                <rect class="c-line c-surface" x="56" y="48" width="130" height="130" rx="10"/>
+                <path class="c-line" d="M121 64v96"/>
+                <path class="c-faint" d="M119 76c-18-5-34 1-40 15M119 92c-18-5-35 1-42 16M119 108c-18-5-35 1-42 16M119 124c-16-4-31 1-37 14M123 76c18-5 34 1 40 15M123 92c18-5 35 1 42 16M123 108c18-5 35 1 42 16M123 124c16-4 31 1 37 14"/>
+                <path class="c-line" d="M113 68c-24-6-44 16-42 52 1 20 16 30 42 22M129 68c24-6 44 16 42 52-1 20-16 30-42 22"/>
+                <circle class="c-acc c-dash" cx="146" cy="104" r="10"/>
+                <rect class="c-soft" x="57" y="125" width="128" height="12"/>
+                <path class="c-acc" d="M57 131h128"/>
+                <path class="c-acc" d="M66 70V58h12M176 70V58h-12M66 156v12h12M176 156v12h-12"/>
+                <path class="c-line" d="M198 113h32M222 106l8 7-8 7"/>
+                <rect class="c-accfill" x="244" y="72" width="44" height="8" rx="4"/>
+                <rect class="c-bar" x="294" y="72" width="54" height="8" rx="4"/>
+                <rect class="c-bar" x="244" y="92" width="104" height="8" rx="4"/>
+                <rect class="c-bar" x="244" y="112" width="86" height="8" rx="4"/>
+                <rect class="c-bar" x="244" y="132" width="62" height="8" rx="4"/>
+                <rect class="c-accfill" x="312" y="130" width="3" height="12"/>
+                <text class="c-text" x="244" y="170">generated caption</text>
+              </svg>
+            </div>
+            <div class="project-body">
+              <div class="project-meta"><span class="cat">Vision · LLM</span><span>Industry</span></div>
+              <h3>Medical image captioning</h3>
+              <p>Vision-language models that caption medical images, with fine-tuning, vector databases and deployment on AWS.</p>
+              <ul class="tags"><li class="tag">VLMs</li><li class="tag">AWS</li><li class="tag">Vector DBs</li></ul>
+              <div class="project-foot">
+                <span class="private"><svg class="icon" aria-hidden="true"><use href="#i-lock"/></svg>Private · Wealthy Technology</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Urban Bloom -->
+          <article class="card project spot" data-cat="rag" data-reveal style="--d:1">
+            <div class="cover" aria-hidden="true">
+              <svg viewBox="0 0 400 225">
+                <text class="c-text c-text-ink" x="40" y="34">multi-agent · RAG</text>
+                <path class="c-acc c-dash" d="M114 61 183 76M286 61 217 76M133 110 185 90M267 110 215 90"/>
+                <circle class="c-acc c-soft" cx="200" cy="80" r="18"/>
+                <text class="c-text c-text-acc" x="200" y="83.5" text-anchor="middle" font-size="9.5">RAG</text>
+                <circle class="c-line c-surface" cx="104" cy="58" r="11"/>
+                <circle class="c-line c-surface" cx="296" cy="58" r="11"/>
+                <circle class="c-line c-surface" cx="124" cy="116" r="11"/>
+                <circle class="c-line c-surface" cx="276" cy="116" r="11"/>
+                <circle class="c-ink" cx="104" cy="58" r="3"/>
+                <circle class="c-ink" cx="296" cy="58" r="3"/>
+                <circle class="c-ink" cx="124" cy="116" r="3"/>
+                <circle class="c-ink" cx="276" cy="116" r="3"/>
+                <path class="c-faint c-dash" d="M200 98v34"/>
+                <path class="c-line" d="M40 190h22v-40h26v40h14v-62h26v62h12v-30h22v30h14v-54h48v54h14v-34h24v34h12v-70h26v70h12v-26h24v26h24"/>
+                <path class="c-faint" d="M109 140h4M117 140h4M109 152h4M117 152h4M109 164h4M117 164h4M281 132h4M289 132h4M281 144h4M289 144h4M281 156h4M289 156h4M188 148h24M188 160h24"/>
+                <path class="c-acc" d="M95 190v-12M169 190v-12M231 190v-12"/>
+                <circle class="c-acc c-soft" cx="95" cy="172" r="6"/>
+                <circle class="c-acc c-soft" cx="169" cy="172" r="6"/>
+                <circle class="c-acc c-soft" cx="231" cy="172" r="6"/>
+                <text class="c-text" x="360" y="212" text-anchor="end">FastAPI · GCP</text>
+              </svg>
+            </div>
+            <div class="project-body">
+              <div class="project-meta"><span class="cat">RAG &amp; agents</span><span>Open source</span></div>
+              <h3>Urban Bloom</h3>
+              <p>A multi-agent RAG system for eco-friendly city planning, built with LLMs and FastAPI on GCP.</p>
+              <ul class="tags"><li class="tag">Multi-agent</li><li class="tag">FastAPI</li><li class="tag">GCP</li></ul>
+              <div class="project-foot">
+                <div class="project-links">
+                  <a class="plink" href="https://github.com/Mehyarmlaweh/Intelligent-City" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-github"/></svg>Code</a>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- DataVizQA -->
+          <article class="card project spot" data-cat="rag" data-reveal style="--d:2">
+            <div class="cover" aria-hidden="true">
+              <svg viewBox="0 0 400 225">
+                <text class="c-text c-text-ink" x="46" y="40">ask your data</text>
+                <path class="c-line c-surface" d="M58 62h124a12 12 0 0 1 12 12v26a12 12 0 0 1-12 12H84l-14 12v-12H58a12 12 0 0 1-12-12V74a12 12 0 0 1 12-12Z"/>
+                <text class="c-text c-text-ink" x="60" y="91">“sales by region?”</text>
+                <path class="c-acc" d="M200 96c14 0 14 22 28 26M220 124.5l8-2.5-3-7.5"/>
+                <path class="c-line" d="M238 52v124h122"/>
+                <rect class="c-bar" x="250" y="136" width="14" height="40" rx="3"/>
+                <rect class="c-bar" x="272" y="104" width="14" height="72" rx="3"/>
+                <rect class="c-bar" x="294" y="122" width="14" height="54" rx="3"/>
+                <rect class="c-accfill" x="316" y="76" width="14" height="100" rx="3"/>
+                <rect class="c-bar" x="338" y="96" width="14" height="80" rx="3"/>
+                <path class="c-accfill" d="M323 45l3 7 7 3-7 3-3 7-3-7-7-3 7-3Z"/>
+                <text class="c-text" x="46" y="150">→ chart</text>
+                <text class="c-text" x="46" y="170">→ insight</text>
+                <text class="c-text" x="46" y="206">streamlit · LLM</text>
+              </svg>
+            </div>
+            <div class="project-body">
+              <div class="project-meta"><span class="cat">RAG &amp; agents</span><span>Live demo</span></div>
+              <h3>DataVizQA</h3>
+              <p>Ask questions about a dataset in plain English and get AI-generated plots and insights back.</p>
+              <ul class="tags"><li class="tag">LLMs</li><li class="tag">Streamlit</li><li class="tag">Pandas</li></ul>
+              <div class="project-foot">
+                <div class="project-links">
+                  <a class="plink" href="https://viewyourdata.streamlit.app/" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-play"/></svg>Demo</a>
+                  <a class="plink" href="https://github.com/Mehyarmlaweh/DataVizQA" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-github"/></svg>Code</a>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- NER resumes dataset -->
+          <article class="card project spot" data-cat="data" data-reveal>
+            <div class="cover" aria-hidden="true">
+              <svg viewBox="0 0 400 225">
+                <text class="c-text c-text-ink" x="40" y="40">5,029 CVs</text>
+                <text class="c-text" x="40" y="58">NER · JSON</text>
+                <rect class="c-faint c-surface" x="160" y="18" width="150" height="176" rx="8"/>
+                <rect class="c-faint c-surface" x="150" y="26" width="150" height="176" rx="8"/>
+                <rect class="c-line c-surface" x="140" y="34" width="150" height="176" rx="8"/>
+                <rect class="c-ink" x="156" y="52" width="64" height="8" rx="4"/>
+                <rect class="c-bar" x="156" y="66" width="44" height="6" rx="3"/>
+                <rect class="c-bar" x="156" y="88" width="38" height="6" rx="3"/>
+                <rect class="c-acc c-soft" x="198" y="84" width="48" height="14" rx="4"/>
+                <rect class="c-accfill" x="202" y="88" width="40" height="6" rx="3"/>
+                <rect class="c-bar" x="250" y="88" width="24" height="6" rx="3"/>
+                <rect class="c-bar" x="156" y="104" width="118" height="6" rx="3"/>
+                <rect class="c-acc c-soft" x="152" y="116" width="44" height="14" rx="4"/>
+                <rect class="c-accfill" x="156" y="120" width="36" height="6" rx="3"/>
+                <rect class="c-bar" x="200" y="120" width="74" height="6" rx="3"/>
+                <rect class="c-bar" x="156" y="136" width="90" height="6" rx="3"/>
+                <rect class="c-bar" x="156" y="152" width="30" height="6" rx="3"/>
+                <rect class="c-acc c-soft" x="190" y="148" width="56" height="14" rx="4"/>
+                <rect class="c-accfill" x="194" y="152" width="48" height="6" rx="3"/>
+                <rect class="c-bar" x="250" y="152" width="24" height="6" rx="3"/>
+                <rect class="c-bar" x="156" y="168" width="104" height="6" rx="3"/>
+                <rect class="c-bar" x="156" y="184" width="64" height="6" rx="3"/>
+                <path class="c-acc c-dash" d="M246 91h66M152 123h-24M246 155h66"/>
+                <text class="c-text c-text-acc" x="318" y="94.5" font-size="9.5">SKILL</text>
+                <text class="c-text c-text-acc" x="122" y="126.5" font-size="9.5" text-anchor="end">SKILL</text>
+                <text class="c-text c-text-acc" x="318" y="158.5" font-size="9.5">SKILL</text>
+              </svg>
+            </div>
+            <div class="project-body">
+              <div class="project-meta"><span class="cat">Dataset</span><span>Open data</span></div>
+              <h3>Annotated NER PDF résumés</h3>
+              <p>5,029 CVs with IT skills annotated for named-entity recognition, in JSON and ready for NLP training.</p>
+              <ul class="tags"><li class="tag">NER</li><li class="tag">NLP</li><li class="tag">JSON</li></ul>
+              <div class="project-foot">
+                <div class="project-links">
+                  <a class="plink" href="https://huggingface.co/datasets/Mehyaar/Annotated_NER_PDF_Resumes" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-database"/></svg>Dataset</a>
+                  <a class="plink" href="https://github.com/mehyarmlaweh/ner-resume-dataset" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-github"/></svg>Code</a>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- PluginKernel -->
+          <article class="card project spot" data-cat="ml" data-reveal style="--d:1">
+            <div class="cover" aria-hidden="true">
+              <svg viewBox="0 0 400 225">
+                <text class="c-text c-text-ink" x="40" y="36">f(x) = 1/(nh) Σ K((x − xᵢ)/h)</text>
+                <text class="c-text c-text-acc" x="360" y="56" text-anchor="end">plug-in h*</text>
+                <g transform="translate(20 0)">
+                  <rect class="c-bar" x="61" y="178.5" width="18" height="1.5" rx="1"/><rect class="c-bar" x="81" y="169" width="18" height="11" rx="2"/><rect class="c-bar" x="101" y="138.6" width="18" height="41.4" rx="2"/><rect class="c-bar" x="121" y="99.6" width="18" height="80.4" rx="2"/><rect class="c-bar" x="141" y="98.9" width="18" height="81.1" rx="2"/><rect class="c-bar" x="161" y="137.4" width="18" height="42.6" rx="2"/><rect class="c-bar" x="181" y="165" width="18" height="15" rx="2"/><rect class="c-bar" x="201" y="156.2" width="18" height="23.8" rx="2"/><rect class="c-bar" x="221" y="123.5" width="18" height="56.5" rx="2"/><rect class="c-bar" x="241" y="122.9" width="18" height="57.1" rx="2"/><rect class="c-bar" x="261" y="157" width="18" height="23" rx="2"/><rect class="c-bar" x="281" y="176.3" width="18" height="3.7" rx="1"/>
+                  <path class="c-soft" d="M50 179.9L55 179.8L60 179.6L65 179.3L70 178.6L75 177.5L80 175.7L85 172.9L90 168.8L95 163.1L100 155.6L105 146.2L110 135.1L115 123L120 110.7L125 99.4L130 90.1L135 84.1L140 82L145 84.1L150 90.1L155 99.4L160 110.7L165 123L170 135L175 145.8L180 154.8L185 161.5L190 165.6L195 167.2L200 165.9L205 161.9L210 155.2L215 146.3L220 135.9L225 125.4L230 116.3L235 110.1L240 107.9L245 110.1L250 116.4L255 125.6L260 136.3L265 147L270 156.6L275 164.4L280 170.2L285 174.3L290 176.8L295 178.4L300 179.2L305 179.6L310 179.8L310 180L50 180Z"/>
+                  <path class="c-acc" d="M50 179.9L55 179.8L60 179.6L65 179.3L70 178.6L75 177.5L80 175.7L85 172.9L90 168.8L95 163.1L100 155.6L105 146.2L110 135.1L115 123L120 110.7L125 99.4L130 90.1L135 84.1L140 82L145 84.1L150 90.1L155 99.4L160 110.7L165 123L170 135L175 145.8L180 154.8L185 161.5L190 165.6L195 167.2L200 165.9L205 161.9L210 155.2L215 146.3L220 135.9L225 125.4L230 116.3L235 110.1L240 107.9L245 110.1L250 116.4L255 125.6L260 136.3L265 147L270 156.6L275 164.4L280 170.2L285 174.3L290 176.8L295 178.4L300 179.2L305 179.6L310 179.8"/>
+                  <path class="c-line" d="M106.5 186v8M116.2 186v8M123.2 186v8M129 186v8M134 186v8M139 186v8M144 186v8M149 186v8M154.5 186v8M160.8 186v8M169 186v8M183.8 186v8M212 186v8M223.8 186v8M231.8 186v8M238.8 186v8M245.2 186v8M252.5 186v8M262.2 186v8"/>
+                </g>
+                <path class="c-line" d="M40 180h320"/>
+                <text class="c-text" x="40" y="214">kernel density estimation</text>
+              </svg>
+            </div>
+            <div class="project-body">
+              <div class="project-meta"><span class="cat">ML · Stats</span><span>PyPI package</span></div>
+              <h3>PluginKernel</h3>
+              <p>A published Python package implementing the plug-in smoothing algorithm for kernel density estimation.</p>
+              <ul class="tags"><li class="tag">Python</li><li class="tag">KDE</li><li class="tag">NumPy</li></ul>
+              <div class="project-foot">
+                <div class="project-links">
+                  <a class="plink" href="https://pypi.org/project/PluginKernel/" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-package"/></svg>PyPI</a>
+                  <a class="plink" href="https://github.com/mehyarmlaweh/PluginKernel" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-github"/></svg>Code</a>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Twitter trend analysis -->
+          <article class="card project spot" data-cat="ml" data-reveal style="--d:2">
+            <div class="cover" aria-hidden="true">
+              <svg viewBox="0 0 400 225">
+                <text class="c-text c-text-ink" x="40" y="38">15.4k tweets</text>
+                <text class="c-text" x="360" y="38" text-anchor="end"><tspan class="c-text-acc">▲ positive</tspan>  ▼ negative</text>
+                <path class="c-faint" d="M40 118h320"/>
+                <rect class="c-accfill" x="52" y="86" width="12" height="30" rx="2"/><rect class="c-bar" x="74" y="120" width="12" height="18" rx="2"/><rect class="c-accfill" x="96" y="74" width="12" height="42" rx="2"/><rect class="c-accfill" x="118" y="94" width="12" height="22" rx="2"/><rect class="c-bar" x="140" y="120" width="12" height="36" rx="2"/><rect class="c-bar" x="162" y="120" width="12" height="50" rx="2"/><rect class="c-accfill" x="184" y="98" width="12" height="18" rx="2"/><rect class="c-bar" x="206" y="120" width="12" height="28" rx="2"/><rect class="c-accfill" x="228" y="70" width="12" height="46" rx="2"/><rect class="c-accfill" x="250" y="82" width="12" height="34" rx="2"/><rect class="c-bar" x="272" y="120" width="12" height="20" rx="2"/><rect class="c-accfill" x="294" y="90" width="12" height="26" rx="2"/><rect class="c-bar" x="316" y="120" width="12" height="40" rx="2"/><rect class="c-accfill" x="338" y="78" width="12" height="38" rx="2"/>
+                <text class="c-text" x="40" y="204">random forest · sentiment</text>
+              </svg>
+            </div>
+            <div class="project-body">
+              <div class="project-meta"><span class="cat">ML · NLP</span><span>Open source</span></div>
+              <h3>Twitter trend analysis</h3>
+              <p>Sentiment analysis of 15.4k tweets with a Random Forest, plus visualisations of how public opinion evolved.</p>
+              <ul class="tags"><li class="tag">scikit-learn</li><li class="tag">NLP</li><li class="tag">Viz</li></ul>
+              <div class="project-foot">
+                <div class="project-links">
+                  <a class="plink" href="https://github.com/Mehyarmlaweh/Israel-Palestine-conflict-Twitter-Analysis" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-github"/></svg>Code</a>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <p class="work-more" data-reveal>
+          More on <a class="link" href="https://github.com/mehyarmlaweh" target="_blank" rel="noopener">GitHub</a>,
+          <a class="link" href="https://huggingface.co/Mehyaar" target="_blank" rel="noopener">Hugging Face</a> and
+          <a class="link" href="https://www.kaggle.com/mehyarmlaweh" target="_blank" rel="noopener">Kaggle</a>.
+        </p>
+      </div>
+    </section>
+
+    <!-- ======= Research & teaching ======= -->
+    <section class="section" id="research">
+      <div class="container">
+        <header class="section-head" data-reveal>
+          <p class="eyebrow"><span class="num">03</span><span class="rule"></span>Research &amp; teaching</p>
+          <h2 class="section-title">Where search meets <em>generation</em></h2>
+        </header>
+
+        <div class="research-grid">
+          <div class="research-copy" data-reveal>
+            <p class="big">My PhD develops <strong>search-based and generative methods</strong> (Monte Carlo Tree Search and deep generative models) for <strong>3D RNA and protein design</strong>, with drug discovery as the goal.</p>
+            <p>I build and benchmark structure-prediction and inverse-folding pipelines on GPU/ARM infrastructure (NVIDIA Grace Blackwell), evaluated with TM-score and RMSD/eRMSD. The same habits carry over to client work: clear baselines, honest metrics and reproducible experiments.</p>
+
+            <dl class="facts">
+              <div class="fact"><dt>Lab</dt><dd>LAMSADE, Université Paris-Dauphine – PSL</dd></div>
+              <div class="fact"><dt>Advisor</dt><dd>Prof. Tristan Cazenave</dd></div>
+              <div class="fact"><dt>Funding</dt><dd>PRAIRIE – Paris AI Research Institute</dd></div>
+              <div class="fact"><dt>Since</dt><dd>October 2025</dd></div>
+            </dl>
+
+            <ul class="tags">
+              <li class="tag tag--accent">Monte Carlo Tree Search</li>
+              <li class="tag tag--accent">RNA inverse folding</li>
+              <li class="tag">Generative models</li>
+              <li class="tag">Graph neural networks</li>
+              <li class="tag">Reinforcement learning</li>
+              <li class="tag">Combinatorial optimisation</li>
+            </ul>
           </div>
-        </div>
-      </div>
 
-    </div>
-  </div>
-</section>    
-<!-- ======= Publications ======= -->
-<section id="publications" class="resume section-bg">
-  <div class="container" data-aos="fade-up">
+          <div class="research-side">
+            <article class="card pub" id="publications" data-reveal style="--d:1">
+              <div class="pub-art" aria-hidden="true">
+                <svg viewBox="0 0 520 150">
+                  <text class="c-text" x="32" y="30">5′</text>
+                  <text class="c-text" x="32" y="112">3′</text>
+                  <path class="c-line" d="M52 56h192M52 92h192M244 56c46-18 46 54 0 36"/>
+                  <path class="c-faint" d="M76 61v26M100 61v26M124 61v26M148 61v26M172 61v26M196 61v26M220 61v26M244 61v26"/>
+                  <circle class="c-line c-surface" cx="76" cy="56" r="4.5"/>
+                  <circle class="c-acc c-soft" cx="100" cy="56" r="4.5"/>
+                  <circle class="c-line c-surface" cx="124" cy="56" r="4.5"/>
+                  <circle class="c-line c-surface" cx="148" cy="56" r="4.5"/>
+                  <circle class="c-acc c-soft" cx="172" cy="56" r="4.5"/>
+                  <circle class="c-line c-surface" cx="196" cy="56" r="4.5"/>
+                  <circle class="c-acc c-soft" cx="220" cy="56" r="4.5"/>
+                  <circle class="c-line c-surface" cx="244" cy="56" r="4.5"/>
+                  <circle class="c-line c-surface" cx="76" cy="92" r="4.5"/>
+                  <circle class="c-line c-surface" cx="100" cy="92" r="4.5"/>
+                  <circle class="c-acc c-soft" cx="124" cy="92" r="4.5"/>
+                  <circle class="c-line c-surface" cx="148" cy="92" r="4.5"/>
+                  <circle class="c-line c-surface" cx="172" cy="92" r="4.5"/>
+                  <circle class="c-acc c-soft" cx="196" cy="92" r="4.5"/>
+                  <circle class="c-line c-surface" cx="220" cy="92" r="4.5"/>
+                  <circle class="c-line c-surface" cx="244" cy="92" r="4.5"/>
+                  <circle class="c-acc c-soft" cx="270" cy="58" r="4.5"/>
+                  <circle class="c-line c-surface" cx="278.5" cy="74" r="4.5"/>
+                  <circle class="c-acc c-soft" cx="270" cy="91" r="4.5"/>
+                  <path class="c-acc c-dash" d="M362 74h-54M314 68l-6 6 6 6"/>
+                  <path class="c-faint c-surface" d="M380 34l13.86 8v16l-13.86 8-13.86-8v-16ZM408 34l13.86 8v16l-13.86 8-13.86-8v-16ZM436 34l13.86 8v16l-13.86 8-13.86-8v-16ZM464 34l13.86 8v16l-13.86 8-13.86-8v-16ZM394 58l13.86 8v16l-13.86 8-13.86-8v-16ZM450 58l13.86 8v16l-13.86 8-13.86-8v-16ZM478 58l13.86 8v16l-13.86 8-13.86-8v-16ZM380 82l13.86 8v16l-13.86 8-13.86-8v-16ZM408 82l13.86 8v16l-13.86 8-13.86-8v-16ZM436 82l13.86 8v16l-13.86 8-13.86-8v-16ZM464 82l13.86 8v16l-13.86 8-13.86-8v-16Z"/>
+                  <path class="c-acc c-soft" d="M422 58l13.86 8v16l-13.86 8-13.86-8v-16Z"/>
+                  <circle class="c-accfill" cx="422" cy="74" r="3"/>
+                  <text class="c-text" x="32" y="136">structure → sequence</text>
+                  <text class="c-text" x="488" y="136" text-anchor="end">artificial bee colony</text>
+                </svg>
+              </div>
+              <div class="pub-body">
+                <span class="pub-venue">AAAI-26 · Workshop on AI for Drug Discovery</span>
+                <h3 class="pub-title">
+                  <a href="https://arxiv.org/abs/2511.21781" target="_blank" rel="noopener">BeeRNA: Tertiary Structure-Based RNA Inverse Folding Using Artificial Bee Colony</a>
+                </h3>
+                <p class="pub-authors"><strong>M. Mlaweh</strong>, I. Alaya, T. Cazenave</p>
+                <p class="pub-where">Singapore EXPO · 26 January 2026</p>
 
-    <div class="section-title">
-      <h2>Publications</h2>
-      <p>Research contributions in AI</p>
-    </div>
+                <div class="pub-actions">
+                  <a class="plink" href="https://arxiv.org/pdf/2511.21781" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-file"/></svg>PDF</a>
+                  <a class="plink" href="https://arxiv.org/abs/2511.21781" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-arrow-up-right"/></svg>arXiv</a>
+                  <button class="plink" type="button" data-collapse aria-expanded="false" aria-controls="bibtex-beerna"><span data-label>BibTeX</span></button>
+                </div>
 
-    <div class="row">
-      <div class="col-lg-12">
+                <div class="collapse" id="bibtex-beerna">
+                  <div>
+                    <div class="bib">
+                      <pre id="bibtex-beerna-src">@misc{mlaweh2025beerna,
+  title         = {BeeRNA: tertiary structure-based RNA inverse
+                   folding using Artificial Bee Colony},
+  author        = {Mehyar Mlaweh and Tristan Cazenave and Ines Alaya},
+  year          = {2025},
+  eprint        = {2511.21781},
+  archivePrefix = {arXiv},
+  primaryClass  = {q-bio.BM},
+  url           = {https://arxiv.org/abs/2511.21781}
+}</pre>
+                      <button class="copy-btn" type="button" data-copy="#bibtex-beerna-src">
+                        <svg class="icon i-copy" aria-hidden="true"><use href="#i-copy"/></svg>
+                        <svg class="icon i-check" aria-hidden="true"><use href="#i-check"/></svg>
+                        <span data-label>Copy</span>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </article>
 
-<!-- BeeRNA – Accepted -->
-<div class="publication-item mb-4 p-4 bg-white rounded shadow-sm">
-  <div class="d-flex align-items-start">
-    <div class="publication-icon me-3 text-primary">
-      <i class="bx bxs-file-pdf" style="font-size: 2rem;"></i>
-    </div>
-
-    <div class="flex-grow-1">
-      <h4 class="mb-1">
-        <strong>BeeRNA:</strong>
-        <a href="https://arxiv.org/pdf/2511.21781"
-           target="_blank"
-           rel="noopener noreferrer"
-           class="text-decoration-none text-dark">
-          Tertiary Structure-Based RNA Inverse Folding Using Artificial Bee Colony
-        </a>
-      </h4>
-
-      <p class="mb-1 text-muted">
-        <em>Mlaweh, M., Alaya, I., &amp; Cazenave, T.</em> (2026)
-      </p>
-
-      <p class="mb-2">
-        Accepted at <strong>AI in Drug Discovery Workshop (AAAI 2026)</strong>,
-        EXPO Singapore — 26 January 2026
-      </p>
-
-      <div class="d-flex flex-wrap gap-2 mb-3">
-        <span class="badge bg-success text-white"><i class="bx bx-dna"></i> RNA Structure</span>
-        <span class="badge bg-success text-white"><i class="bx bx-brain"></i> Swarm Intelligence</span>
-        <span class="badge bg-success text-white"><i class="bx bx-brain"></i> RNA Design</span>
-        <span class="badge bg-success text-white"><i class="bx bx-brain"></i> Artificial Bee Colony</span>
-      </div>
-
-      <!-- BibTeX toggle -->
-      <button class="btn btn-sm btn-outline-primary"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#bibtex-beerna"
-              aria-expanded="false"
-              aria-controls="bibtex-beerna">
-        Show BibTeX
-      </button>
-
-      <!-- BibTeX content -->
-      <div class="collapse mt-2" id="bibtex-beerna">
-        <pre class="bg-light p-3 rounded small mb-0"><code>@misc{mlaweh2025beernatertiarystructurebasedrna,
-      title={BeeRNA: tertiary structure-based RNA inverse folding using Artificial Bee Colony}, 
-      author={Mehyar Mlaweh and Tristan Cazenave and Ines Alaya},
-      year={2025},
-      eprint={2511.21781},
-      archivePrefix={arXiv},
-      primaryClass={q-bio.BM},
-      url={https://arxiv.org/abs/2511.21781}, 
-}</code></pre>
-      </div>
-
-    </div>
-  </div>
-</div>
-
-      <!-- Link row -->
-      <div class="mt-3 d-flex flex-wrap gap-2">
-
-        <a href="https://arxiv.org/abs/2511.21781"
-           target="_blank"
-           rel="noopener noreferrer"
-           class="btn btn-sm btn-outline-secondary">
-          <i class="bx bx-link-external"></i> arXiv
-        </a>
-      </div>
-    </div>
-  </div>
-</div>
-
-        <!-- End BeeRNA -->
-
-        <!-- Future publications go here – just copy the block above -->
-        <!--
-        <div class="publication-item mb-4 p-4 bg-white rounded shadow-sm">
-          ...
-        </div>
-        -->
-
-      </div>
-    </div>
-
-  </div>
-</section>
-<!-- ======= Awards ======= -->
-<section id="awards" class="resume section-bg">
-  <div class="container" data-aos="fade-up">
-    <div class="section-title">
-      <h2>Awards</h2>
-      <p>Recognitions for excellence in AI research, hackathons, and academics</p>
-    </div>
-
-    <div class="row">
-      <div class="col-lg-4">
-        <!-- First Place: Airbnb Hackathon -->
-        <div class="award-item text-center mb-4" data-aos="fade-up" data-aos-delay="100">
-          <div class="award-image mb-3">
-            <img src="assets/img/awards/hack1.jpeg" class="img-fluid rounded-circle" alt="Airbnb and the Olympics Hackathon - 1st Place" style="width: 200px; height: 200px; object-fit: cover;">
-          </div>
-          <h4>First Place</h4>
-          <p><strong>Hackathon on "Airbnb and the Olympics"</strong></p>
-          <small class="text-muted">2024 – Innovative AI solution for Olympic accommodation optimization</small>
-        </div>
-      </div>
-
-      <div class="col-lg-4">
-        <!-- Second Place: Hack for Care -->
-        <div class="award-item text-center mb-4" data-aos="fade-up" data-aos-delay="200">
-          <div class="award-image mb-3">
-            <img src="assets/img/awards/hack2.jpeg" class="img-fluid rounded-circle" alt="Hack for Care and Culture with AI - 2nd Place" style="width: 200px; height: 200px; object-fit: cover;">
-          </div>
-          <h4>Second Place</h4>
-          <p><strong>Hack for Care and Culture with AI</strong></p>
-          <small class="text-muted">2024 – AI-driven cultural preservation and healthcare integration</small>
-        </div>
-      </div>
-
-      <div class="col-lg-4">
-        <!-- Valedictorian: LinkedIn Embed -->
-        <div class="award-item text-center mb-4" data-aos="fade-up" data-aos-delay="300">
-                    <div class="award-image mb-3">
-            <img src="assets/img/awards/topstudent.jpg" class="img-fluid rounded-circle" alt="Hack for Care and Culture with AI - 2nd Place" style="width: 200px; height: 200px; object-fit: cover;">
-          </div>
-
-          <h4>Valedictorian</h4>
-          <p><strong>Master's in Artificial Intelligence and Data Science</strong><br>Université Paris Dauphine – PSL</p>
-          <small class="text-muted">2025 – Top graduate (15.74/20) in Deep Learning, NLP, and Generative AI</small>
-          <div class="mt-3">
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- ======= Extracurricular Activities ======= -->
-<section id="extracurricular" class="resume section-bg">
-  <div class="container" data-aos="fade-up">
-
-    <div class="section-title">
-      <h2>Extracurricular Activities</h2>
-    </div>
-
-    <div class="row">
-      <div class="col-lg-12">
-
-        <!-- ---------- VivaTech 2025 – Wealthy Technology ---------- -->
-        <div class="activity-item mb-5">
-          <h4 class="mb-1">Startup Presenter – Wealthy Technology</h4>
-          <h5 class="text-primary mb-2">May 2025</h5>
-          <p class="mb-2"><em>VivaTech 2025 – Paris Expo Porte de Versailles, France</em></p>
-
-          <p>
-            Represented <strong>Wealthy Technology</strong> at Europe’s biggest tech conference, demoing our GenAI‑powered medical‑imaging platform. 
-            <strong>Special thanks to Amazon Web Services (AWS)</strong> for sponsoring the booth and supporting early‑stage AI startups.
-          </p>
-
-          <div class="text-center mt-3">
-            <a href="assets/img/awards/awswealthy.jpeg"
-               data-glightbox="type: image; description: Mehyar Mlaweh presenting Wealthy Technology at VivaTech 2025"
-               class="glightbox">
-              <img src="assets/img/awards/awswealthy.jpeg"
-                   class="img-fluid rounded shadow"
-                   alt="Mehyar Mlaweh at VivaTech 2025 – Wealthy Technology booth"
-                   style="max-height:420px;">
+            <a class="card teach spot" id="teaching" href="teaching.html" data-reveal style="--d:2">
+              <span class="teach-icon" aria-hidden="true">
+                <svg viewBox="0 0 32 32"><rect x="3" y="5" width="26" height="17" rx="2"/><path d="M11 27l5-5 5 5"/><path d="M8 10h7v7H8zM11.5 10v7M8 13.5h7"/><path d="M19 11h6M19 15h4"/></svg>
+              </span>
+              <div>
+                <span class="teach-kicker">Teaching · 2025–26</span>
+                <h3>Deep Learning for Image Analysis</h3>
+                <p>Master IASD (apprenticeship), Paris-Dauphine – PSL. Slides, labs and notebooks, from CNNs to ViTs, detection and SAM.</p>
+              </div>
+              <span class="teach-go" aria-hidden="true"><svg class="icon"><use href="#i-arrow-right"/></svg></span>
             </a>
           </div>
         </div>
-</section>
+      </div>
+    </section>
 
-        <!-- ======= Testimonials & Client Reviews ======= -->
-<section id="testimonials-section" class="testimonials section-bg py-5">
-  <div class="container" data-aos="fade-up">
-
-    <div class="section-title text-center mb-5">
-      <h2>Testimonials & Client Reviews</h2>
-      <p>Feedback from managers, professors, and clients</p>
-    </div>
-
-    <div class="row g-4">
-
-      <!-- AbdurRahman ElGammal – Gammal Tech -->
-      <div class="col-lg-6">
-        <div class="testimonial-item p-4 bg-white rounded shadow-sm h-100">
-          <div class="d-flex align-items-center mb-3">
-            <div class="testimonial-photo me-3">
-              <div class="bg-light rounded-circle d-flex align-items-center justify-content-center" style="width:60px;height:60px;">
-                <i class="bx bxs-user text-primary" style="font-size:1.8rem;"></i>
-              </div>
-            </div>
-            <div>
-              <h5 class="mb-0">AbdurRahman ElGammal</h5>
-              <p class="mb-0 text-muted small">Chairman @ Gammal Tech (Direct Manager)</p>
-            </div>
+    <!-- ======= Testimonials ======= -->
+    <section class="section" id="testimonials">
+      <div class="container">
+        <header class="section-head section-head--split" data-reveal>
+          <div>
+            <p class="eyebrow"><span class="num">04</span><span class="rule"></span>Testimonials</p>
+            <h2 class="section-title">Kind words from <em>clients</em></h2>
           </div>
-          <p class="mb-3">
-            <em>“I had the pleasure of managing Mehyar during his internship. He submitted assignments faster than peers, was extremely helpful, and even found a rare-skill freelancer for us the next day — without being asked. Goes above and beyond.”</em>
+          <p class="rating">
+            <span class="stars" aria-hidden="true"><svg class="icon"><use href="#i-star"/></svg><svg class="icon"><use href="#i-star"/></svg><svg class="icon"><use href="#i-star"/></svg><svg class="icon"><use href="#i-star"/></svg><svg class="icon"><use href="#i-star"/></svg></span>
+            <span><strong>5.0</strong> on Upwork reviews</span>
           </p>
-          <div class="text-end">
-            <span class="badge bg-success text-white">Top Performer</span>
+        </header>
+
+        <figure class="card quote-feature" data-reveal>
+          <svg class="quote-mark" viewBox="0 0 49 36" aria-hidden="true"><path fill="currentColor" d="M0 36V22.5C0 9.8 6.6 2.3 19.8 0l1.9 4.6C14.4 6.6 10.7 10.9 10.3 17.4H19V36Zm27 0V22.5C27 9.8 33.6 2.3 46.8 0l1.9 4.6c-7.3 2-11 6.3-11.4 12.8H46V36Z"/></svg>
+          <blockquote>
+            Mehyar is an amazing freelancer! From the beginning, I was impressed by his skills, knowledge, availability, and patience — he's truly patient and always takes the time to explain everything with care. He genuinely wants to make sure you're satisfied. I've worked with many freelancers here and elsewhere, but Mehyar stands out as exceptionally knowledgeable. <mark>The code he delivers is clean, well-structured, and modular. He's incredibly smart and resourceful!</mark> I can't express enough how amazed I am by working with him, and I truly look forward to more collaborations in the future!
+          </blockquote>
+          <figcaption class="quote-by">
+            <span class="avatar"><svg class="icon" aria-hidden="true"><use href="#i-upwork"/></svg></span>
+            <span class="who"><b>Upwork client</b><span>Fine-tuning an LLM (Gemma-3 4B)</span></span>
+            <span class="stars" role="img" aria-label="5 out of 5 stars"><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg></span>
+          </figcaption>
+        </figure>
+
+        <p class="swipe-hint" aria-hidden="true">More reviews <svg class="icon"><use href="#i-arrow-right"/></svg></p>
+        <div class="quotes">
+          <figure class="card quote" data-reveal>
+            <blockquote>“The delivered LLM met the core requirements and its performance metrics were strong, which demonstrates high technical skill. Communication throughout the project was prompt, and Mehyar handled revisions efficiently, making this an excellent and professional experience. Thank you!”</blockquote>
+            <figcaption class="quote-by">
+              <span class="avatar"><svg class="icon" aria-hidden="true"><use href="#i-upwork"/></svg></span>
+              <span class="who"><b>Upwork client</b><span>LLM-powered home energy management</span></span>
+            </figcaption>
+          </figure>
+
+          <figure class="card quote" data-reveal style="--d:1">
+            <blockquote>“Amazing individual and very talented. Highly recommend working with a skilled freelancer like Mehyar.”</blockquote>
+            <figcaption class="quote-by">
+              <span class="avatar"><svg class="icon" aria-hidden="true"><use href="#i-upwork"/></svg></span>
+              <span class="who"><b>Upwork client</b><span>Fine-tuning Qwen-72B on RunPod</span></span>
+            </figcaption>
+          </figure>
+
+          <figure class="card quote" data-reveal style="--d:2">
+            <blockquote>“Delivered high-quality prompt flows for complex chatbot logic with zero revisions needed.”</blockquote>
+            <figcaption class="quote-by">
+              <span class="avatar"><svg class="icon" aria-hidden="true"><use href="#i-upwork"/></svg></span>
+              <span class="who"><b>Upwork client</b><span>Prompt engineering for a chatbot</span></span>
+            </figcaption>
+          </figure>
+
+          <figure class="card quote" data-reveal>
+            <blockquote>“I had the pleasure of managing Mehyar during his internship. He submitted assignments faster than peers, was extremely helpful, and even found a rare-skill freelancer for us the next day — without being asked. Goes above and beyond.”</blockquote>
+            <figcaption class="quote-by">
+              <span class="avatar">AE</span>
+              <span class="who"><b>AbdurRahman ElGammal</b><span>Chairman, Gammal Tech · direct manager</span></span>
+            </figcaption>
+          </figure>
+
+          <figure class="card quote" data-reveal style="--d:1">
+            <blockquote>“Rigorous, serious and diligent. Very good level of assimilation and ease in moving from theory to practical projects.”</blockquote>
+            <figcaption class="quote-by">
+              <span class="avatar">MH</span>
+              <span class="who"><b>Mejri Houssem</b><span>Professor &amp; developer</span></span>
+            </figcaption>
+          </figure>
+
+          <div class="card quote quote-cta" data-reveal style="--d:2">
+            <h3>Your project could be <em>next.</em></h3>
+            <p>Tell me what you're building, and I'll tell you honestly whether and how AI can help.</p>
+            <a class="btn btn-primary btn-sm" href="#contact" style="align-self:flex-start">
+              Start a conversation
+              <svg class="icon arrow" aria-hidden="true"><use href="#i-arrow-right"/></svg>
+            </a>
           </div>
         </div>
       </div>
+    </section>
 
-      <!-- Mejri Houssem – Professor -->
-      <div class="col-lg-6">
-        <div class="testimonial-item p-4 bg-white rounded shadow-sm h-100">
-          <div class="d-flex align-items-center mb-3">
-            <div class="testimonial-photo me-3">
-              <div class="bg-light rounded-circle d-flex align-items-center justify-content-center" style="width:60px;height:60px;">
-                <i class="bx bxs-graduation text-primary" style="font-size:1.8rem;"></i>
+    <!-- ======= Experience / Education / Toolbox ======= -->
+    <section class="section" id="experience">
+      <div class="container">
+        <header class="section-head section-head--split" data-reveal>
+          <div>
+            <p class="eyebrow"><span class="num">05</span><span class="rule"></span>Experience</p>
+            <h2 class="section-title">Industry <em>&amp;</em> academia</h2>
+          </div>
+          <div class="tabs" role="tablist" aria-label="Experience, education and skills">
+            <button class="tab" type="button" role="tab" id="tab-work" aria-selected="true" aria-controls="panel-work">Experience</button>
+            <button class="tab" type="button" role="tab" id="tab-education" aria-selected="false" aria-controls="education">Education</button>
+            <button class="tab" type="button" role="tab" id="tab-toolbox" aria-selected="false" aria-controls="toolbox">Toolbox</button>
+          </div>
+        </header>
+
+        <!-- Experience -->
+        <div class="tab-panel" id="panel-work" role="tabpanel" aria-labelledby="tab-work" tabindex="0">
+          <div class="tracks">
+            <div data-reveal>
+              <h3 class="track-title"><svg class="icon" aria-hidden="true"><use href="#i-briefcase"/></svg>Engineering</h3>
+              <ol class="timeline">
+                <li>
+                  <div class="tl-top"><h4 class="tl-role">AI Engineer<span class="now">Now</span></h4><span class="tl-date">Jun 2024 –</span></div>
+                  <p class="tl-org">Wealthy Technology · Paris</p>
+                  <p class="tl-desc">Fine-tuning and deploying LLMs, RAG systems, medical-imaging AI and automation on AWS. Presented our GenAI platform at VivaTech 2025.</p>
+                </li>
+                <li>
+                  <div class="tl-top"><h4 class="tl-role">AI Engineer, Freelance<span class="now">Now</span></h4><span class="tl-date">Nov 2022 –</span></div>
+                  <p class="tl-org">Upwork</p>
+                  <p class="tl-desc">LLM fine-tuning, RAG, prompt engineering, data analysis and automation tooling for international clients.</p>
+                </li>
+                <li>
+                  <div class="tl-top"><h4 class="tl-role">Python Instructor</h4><span class="tl-date">Summers 2024–25</span></div>
+                  <p class="tl-org">Université Paris-Dauphine · Tunis campus</p>
+                </li>
+                <li>
+                  <div class="tl-top"><h4 class="tl-role">Data Analyst</h4><span class="tl-date">Jun – Sep 2022</span></div>
+                  <p class="tl-org">Gammal Tech · Egypt</p>
+                  <p class="tl-desc">Course creation, C/C++, database management, data extraction and Power BI dashboards.</p>
+                </li>
+              </ol>
+            </div>
+
+            <div data-reveal style="--d:1">
+              <h3 class="track-title"><svg class="icon" aria-hidden="true"><use href="#i-flask"/></svg>Research</h3>
+              <ol class="timeline">
+                <li>
+                  <div class="tl-top"><h4 class="tl-role">PhD Researcher<span class="now">Now</span></h4><span class="tl-date">Oct 2025 –</span></div>
+                  <p class="tl-org">LAMSADE · Université Paris-Dauphine – PSL</p>
+                  <p class="tl-desc">MCTS and deep generative models for 3D RNA and protein design. Funded by PRAIRIE – Paris AI Research Institute.</p>
+                </li>
+                <li>
+                  <div class="tl-top"><h4 class="tl-role">Research Intern</h4><span class="tl-date">Feb – Aug 2025</span></div>
+                  <p class="tl-org">LAMSADE · Université Paris-Dauphine – PSL</p>
+                  <p class="tl-desc">Tertiary structure-based RNA inverse folding, benchmarked with TM-score and RMSD/eRMSD. Led to the BeeRNA paper.</p>
+                </li>
+                <li>
+                  <div class="tl-top"><h4 class="tl-role">Research Intern</h4><span class="tl-date">May – Jun 2024</span></div>
+                  <p class="tl-org">IRIT · Toulouse</p>
+                  <p class="tl-desc">NLP with pretrained transformer language models applied to legislative documents.</p>
+                </li>
+                <li>
+                  <div class="tl-top"><h4 class="tl-role">Research Intern</h4><span class="tl-date">Jan – Jun 2023</span></div>
+                  <p class="tl-org">GRIFT · CRISTAL Laboratory · Tunis</p>
+                  <p class="tl-desc">Density estimation and neural-network model evaluation.</p>
+                </li>
+              </ol>
+            </div>
+          </div>
+        </div>
+
+        <!-- Education -->
+        <div class="tab-panel" id="education" role="tabpanel" aria-labelledby="tab-education" tabindex="0">
+          <ol class="edu">
+            <li>
+              <span class="tl-date">2025 – present</span>
+              <div>
+                <h3>PhD in Artificial Intelligence</h3>
+                <p class="tl-org">Université Paris-Dauphine – PSL · LAMSADE</p>
+                <p class="tl-desc">Monte Carlo Tree Search and generative methods for 3D molecule design. Advisor: Prof. Tristan Cazenave.</p>
               </div>
-            </div>
-            <div>
-              <h5 class="mb-0">Mejri Houssem</h5>
-              <p class="mb-0 text-muted small">Professor & Developer</p>
-            </div>
-          </div>
-          <p class="mb-3">
-            <em>“Rigorous, serious and diligent. Very good level of assimilation and ease in moving from theory to practical projects.”</em>
-          </p>
-          <div class="text-end">
-            <span class="badge bg-info text-white">Excellent Student</span>
-          </div>
-        </div>
-      </div>
-
-      <!-- Upwork: Qwen 72B Fine-tuning -->
-      <div class="col-lg-6">
-        <div class="testimonial-item p-4 bg-white rounded shadow-sm h-100">
-          <div class="d-flex align-items-center mb-3">
-            <div class="testimonial-photo me-3">
-              <div class="bg-light rounded-circle d-flex align-items-center justify-content-center" style="width:60px;height:60px;">
-                <i class="bx bxl-upwork text-success" style="font-size:1.8rem;"></i>
+              <span class="grade tag tag--accent">PRAIRIE-funded</span>
+            </li>
+            <li>
+              <span class="tl-date">2023 – 2025</span>
+              <div>
+                <h3>M.Sc. Artificial Intelligence &amp; Data Science</h3>
+                <p class="tl-org">Université Paris-Dauphine – PSL</p>
+                <p class="tl-desc">Deep learning, reinforcement learning, Monte Carlo methods, optimisation, NLP, generative AI, graphs, computer vision.</p>
               </div>
-            </div>
-            <div>
-              <h5 class="mb-0">Client (Upwork)</h5>
-              <p class="mb-0 text-muted small">Fine-tune Qwen-72B on RunPod</p>
-            </div>
-          </div>
-          <p class="crowns mb-3">
-            <em>“Amazing individual and very talented. Highly recommend working with a skilled freelancer like Mehyar.”</em>
-          </p>
-          <div class="d-flex justify-content-between align-items-center">
-            <div class="stars">
-              <i class="bx bxs-star text-warning"></i>
-              <i class="bx bxs-star text-warning"></i>
-              <i class="bx bxs-star text-warning"></i>
-              <i class="bx bxs-star text-warning"></i>
-              <i class="bx bxs-star text-warning"></i>
-            </div>
-            <span class="badge bg-success text-white">5.0 / 5.0</span>
-          </div>
-        </div>
-      </div>
-
-
-            <!-- Upwork: Qwen 72B Fine-tuning -->
-      <div class="col-lg-6">
-        <div class="testimonial-item p-4 bg-white rounded shadow-sm h-100">
-          <div class="d-flex align-items-center mb-3">
-            <div class="testimonial-photo me-3">
-              <div class="bg-light rounded-circle d-flex align-items-center justify-content-center" style="width:60px;height:60px;">
-                <i class="bx bxl-upwork text-success" style="font-size:1.8rem;"></i>
+              <span class="grade tag tag--accent">Valedictorian · 15.74/20</span>
+            </li>
+            <li>
+              <span class="tl-date">2020 – 2023</span>
+              <div>
+                <h3>B.Sc. Management Information Systems</h3>
+                <p class="tl-org">IHEC Carthage</p>
+                <p class="tl-desc">Java, SQL, OLAP, Power BI, Talend, Python and machine learning.</p>
               </div>
+              <span class="grade tag">16.79/20</span>
+            </li>
+          </ol>
+        </div>
+
+        <!-- Toolbox -->
+        <div class="tab-panel" id="toolbox" role="tabpanel" aria-labelledby="tab-toolbox" tabindex="0">
+          <div class="toolbox">
+            <div class="card tool-group">
+              <h3><span class="num">01</span>LLMs &amp; GenAI</h3>
+              <ul class="tags"><li class="tag">Transformers</li><li class="tag">LoRA / PEFT</li><li class="tag">Unsloth</li><li class="tag">RAG</li><li class="tag">Vector databases</li><li class="tag">Prompt engineering</li></ul>
             </div>
-            <div>
-              <h5 class="mb-0">Client (Upwork)</h5>
-              <p class="mb-0 text-muted small">Fine tune LLM Gemma3:4b</p>
+            <div class="card tool-group">
+              <h3><span class="num">02</span>ML / DL</h3>
+              <ul class="tags"><li class="tag">PyTorch</li><li class="tag">PyTorch Geometric</li><li class="tag">Hugging Face</li><li class="tag">scikit-learn</li><li class="tag">fastai</li><li class="tag">NumPy · SciPy</li><li class="tag">Pandas</li></ul>
             </div>
-          </div>
-          <p class="crowns mb-3">
-            <em>Mehyar is an amazing freelancer! From the beginning, I was impressed by his skills, knowledge, availability, and patience —
-               he’s truly patient and always takes the time to explain everything with care. He genuinely wants to make sure you’re satisfied. 
-               I’ve worked with many freelancers here and elsewhere, but Mehyar stands out as exceptionally knowledgeable.
-               The code he delivers is clean, well-structured, and modular. He’s incredibly smart and resourceful!
-               I can’t express enough how amazed I am by working with him, and I truly look forward to more collaborations in the future!.”</em>
-          </p>
-          <div class="d-flex justify-content-between align-items-center">
-            <div class="stars">
-              <i class="bx bxs-star text-warning"></i>
-              <i class="bx bxs-star text-warning"></i>
-              <i class="bx bxs-star text-warning"></i>
-              <i class="bx bxs-star text-warning"></i>
-              <i class="bx bxs-star text-warning"></i>
+            <div class="card tool-group">
+              <h3><span class="num">03</span>Research methods</h3>
+              <ul class="tags"><li class="tag">MCTS</li><li class="tag">Reinforcement learning</li><li class="tag">Diffusion · VAE</li><li class="tag">GNNs</li><li class="tag">Combinatorial optimisation</li><li class="tag">Bayesian inference</li></ul>
             </div>
-            <span class="badge bg-success text-white">5.0 / 5.0</span>
+            <div class="card tool-group">
+              <h3><span class="num">04</span>Cloud &amp; serving</h3>
+              <ul class="tags"><li class="tag">AWS</li><li class="tag">GCP</li><li class="tag">Azure</li><li class="tag">FastAPI</li><li class="tag">Flask</li><li class="tag">Streamlit</li><li class="tag">Gradio</li></ul>
+            </div>
+            <div class="card tool-group">
+              <h3><span class="num">05</span>Infrastructure</h3>
+              <ul class="tags"><li class="tag">Docker</li><li class="tag">CUDA · GPU &amp; HPC</li><li class="tag">RunPod</li><li class="tag">Linux</li><li class="tag">Git</li><li class="tag">Weights &amp; Biases</li></ul>
+            </div>
+            <div class="card tool-group">
+              <h3><span class="num">06</span>Languages</h3>
+              <ul class="tags"><li class="tag">Python</li><li class="tag">C++</li><li class="tag">Java</li><li class="tag">SQL</li><li class="tag">R</li><li class="tag">MATLAB</li></ul>
+            </div>
           </div>
         </div>
       </div>
+    </section>
 
+    <!-- ======= About ======= -->
+    <section class="section" id="about">
+      <div class="container">
+        <header class="section-head" data-reveal>
+          <p class="eyebrow"><span class="num">06</span><span class="rule"></span>About</p>
+          <h2 class="section-title">Beyond the <em>résumé</em></h2>
+        </header>
 
+        <div class="about-grid">
+          <div data-reveal>
+            <figure class="portrait">
+              <img src="assets/img/me.png" alt="Portrait of Mehyar Mlaweh" width="432" height="576" loading="lazy" decoding="async" />
+              <figcaption class="portrait-tag"><svg class="icon" aria-hidden="true"><use href="#i-pin"/></svg>Paris, France</figcaption>
+            </figure>
+          </div>
 
+          <div class="about-copy" data-reveal style="--d:1">
+            <p class="big">I like problems that sit between a whiteboard and a production server: part <em>research question</em>, part engineering.</p>
+            <p>I started in business intelligence at IHEC Carthage, moved to AI and data science at Paris-Dauphine – PSL (graduating valedictorian), and now split my time between a PhD on AI for drug discovery and building LLM systems for companies and clients.</p>
+            <p>Outside the lab I'm an avid reader of papers and books, a coffee lover, a music enthusiast and a proud Formula 1 fan.</p>
 
-            <!-- Upwork: Qwen 72B Fine-tuning -->
-      <div class="col-lg-6">
-        <div class="testimonial-item p-4 bg-white rounded shadow-sm h-100">
-          <div class="d-flex align-items-center mb-3">
-            <div class="testimonial-photo me-3">
-              <div class="bg-light rounded-circle d-flex align-items-center justify-content-center" style="width:60px;height:60px;">
-                <i class="bx bxl-upwork text-success" style="font-size:1.8rem;"></i>
-              </div>
-            </div>
-            <div>
-              <h5 class="mb-0">Client (Upwork)</h5>
-              <p class="mb-0 text-muted small">LLM-Powered Home Energy Management</p>
+            <dl class="about-facts">
+              <div><dt>Based in</dt><dd>Paris, France (CET)</dd></div>
+              <div><dt>Languages</dt><dd>Arabic, French, English</dd></div>
+              <div><dt>Currently</dt><dd>PhD at LAMSADE · AI Engineer</dd></div>
+              <div><dt>Open to</dt><dd>Freelance &amp; research collaborations</dd></div>
+            </dl>
+
+            <div class="about-actions">
+              <a class="btn btn-primary" href="assets/docs/Curriculum_Vitae___Mehyar_MLAWEH___EV.pdf" target="_blank" rel="noopener">
+                <svg class="icon" aria-hidden="true"><use href="#i-download"/></svg>
+                Download CV
+              </a>
+              <a class="btn btn-ghost" href="https://www.linkedin.com/in/mehyar-mlaweh" target="_blank" rel="noopener">
+                <svg class="icon" aria-hidden="true"><use href="#i-linkedin"/></svg>
+                LinkedIn
+              </a>
             </div>
           </div>
-          <p class="crowns mb-3">
-            <em>The delivered LLM met the core requirements and its performance metrics were strong, which demonstrates high technical skill. Communication throughout the project was prompt,
-               and Mehyar handled revisions efficiently, making this an excellent and professional experience. Thank you!”</em>
-          </p>
-          <div class="d-flex justify-content-between align-items-center">
-            <div class="stars">
-              <i class="bx bxs-star text-warning"></i>
-              <i class="bx bxs-star text-warning"></i>
-              <i class="bx bxs-star text-warning"></i>
-              <i class="bx bxs-star text-warning"></i>
-              <i class="bx bxs-star text-warning"></i>
-            </div>
-            <span class="badge bg-success text-white">5.0 / 5.0</span>
+        </div>
+
+        <div class="gallery" id="awards">
+          <div class="gallery-head" data-reveal>
+            <h3>Recognition <em>&amp;</em> moments</h3>
+          </div>
+          <div class="gallery-grid">
+            <figure class="shot" data-reveal>
+              <img src="assets/img/awards/hack1.jpeg" alt="Mehyar and his team holding the first-place cheque at the Airbnb and the Olympics hackathon" loading="lazy" decoding="async" />
+              <span class="rank">1st place</span>
+              <figcaption><b>Airbnb &amp; the Olympics hackathon</b><span>2024 · AI for Olympic accommodation</span></figcaption>
+            </figure>
+            <figure class="shot" data-reveal style="--d:1">
+              <img src="assets/img/awards/hack2.jpeg" alt="Mehyar with the organisers and the second-place cheque at the Hack for Care and Culture with AI hackathon" loading="lazy" decoding="async" style="object-position:48% 50%" />
+              <span class="rank">2nd place</span>
+              <figcaption><b>Hack for Care &amp; Culture with AI</b><span>2024 · AI for healthcare &amp; culture</span></figcaption>
+            </figure>
+            <figure class="shot" data-reveal style="--d:2">
+              <img src="assets/img/awards/topstudent.jpg" alt="Mehyar on stage receiving an honour award at Université Paris-Dauphine" loading="lazy" decoding="async" style="object-position:62% 50%" />
+              <span class="rank">Valedictorian</span>
+              <figcaption><b>M.Sc. AI &amp; Data Science</b><span>2025 · Université Paris-Dauphine – PSL</span></figcaption>
+            </figure>
+            <figure class="shot" data-reveal style="--d:3">
+              <img src="assets/img/awards/awswealthy.jpeg" alt="Mehyar at the AWS for Healthcare and Life Sciences booth at VivaTech 2025" loading="lazy" decoding="async" style="object-position:50% 40%" />
+              <span class="rank">VivaTech 2025</span>
+              <figcaption><b>Presenting Wealthy Technology</b><span>AWS Healthcare &amp; Life Sciences booth</span></figcaption>
+            </figure>
           </div>
         </div>
       </div>
+    </section>
 
+    <!-- ======= Contact ======= -->
+    <section class="section" id="contact">
+      <div class="container">
+        <div class="contact-card" data-reveal>
+          <p class="eyebrow"><span class="num">07</span><span class="rule"></span>Contact</p>
+          <h2 class="contact-title">Have an AI problem<br />worth <em>solving?</em></h2>
+          <p class="contact-lead">Tell me about your project, your data or your research question. Whether it's a freelance project, a collaboration or just an idea, I'm happy to talk.</p>
 
-
-      
-      <!-- Upwork: Prompt Engineering -->
-      <div class="col-lg-6">
-        <div class="testimonial-item p-4 bg-white rounded shadow-sm h-100">
-          <div class="d-flex align-items-center mb-3">
-            <div class="testimonial-photo me-3">
-              <div class="bg-light rounded-circle d-flex align-items-center justify-content-center" style="width:60px;height:60px;">
-                <i class="bx bxl-upwork text-success" style="font-size:1.8rem;"></i>
-              </div>
-            </div>
-            <div>
-              <h5 class="mb-0">Client (Upwork)</h5>
-              <p class="mb-0 text-muted small">Expert Prompt Engineer for Chatbot</p>
-            </div>
+          <div class="contact-actions">
+            <a class="btn btn-primary" href="https://calendly.com/mehyarmlaweh0/30min" target="_blank" rel="noopener" data-calendly>
+              <svg class="icon" aria-hidden="true"><use href="#i-calendar"/></svg>
+              Book a 30-min call
+            </a>
+            <a class="btn btn-ghost" href="https://www.upwork.com/freelancers/~0128b14d14dfc2b85d" target="_blank" rel="noopener">
+              <svg class="icon" aria-hidden="true"><use href="#i-upwork"/></svg>
+              Hire me on Upwork
+            </a>
           </div>
-          <p class="mb-3">
-            <em>Delivered high-quality prompt flows for complex chatbot logic with zero revisions needed.</em>
-          </p>
-          <div class="d-flex justify-content-between align-items-center">
-            <div class="stars">
-              <i class="bx bxs-star text-warning"></i>
-              <i class="bx bxs-star text-warning"></i>
-              <i class="bx bxs-star text-warning"></i>
-              <i class="bx bxs-star text-warning"></i>
-              <i class="bx bxs-star text-warning"></i>
-            </div>
-            <span class="badge bg-success text-white">5.0 / 5.0</span>
+
+          <div class="email-row">
+            <svg class="icon" aria-hidden="true"><use href="#i-mail"/></svg>
+            <a href="mailto:mehyar.mlaweh@dauphine.eu">mehyar.mlaweh@dauphine.eu</a>
+            <button class="copy-btn" type="button" data-copy="mehyar.mlaweh@dauphine.eu" aria-label="Copy email address">
+              <svg class="icon i-copy" aria-hidden="true"><use href="#i-copy"/></svg>
+              <svg class="icon i-check" aria-hidden="true"><use href="#i-check"/></svg>
+              <span data-label>Copy</span>
+            </button>
           </div>
+
+          <ul class="contact-meta">
+            <li><svg class="icon" aria-hidden="true"><use href="#i-pin"/></svg>Paris, France</li>
+            <li><svg class="icon" aria-hidden="true"><use href="#i-clock"/></svg>CET (UTC+1)</li>
+            <li><svg class="icon" aria-hidden="true"><use href="#i-globe"/></svg>English · Français · العربية</li>
+          </ul>
         </div>
       </div>
-
-    </div>
-
-  </div>
-</section>
-<!-- ======= Contact & Booking ======= -->
-<section id="contact" class="contact section-bg py-5">
-  <div class="container" data-aos="fade-up">
-
-    <div class="section-title text-center mb-5">
-      <h2>Contact & Booking</h2>
-      <p>Let’s discuss research, AI projects, or collaboration opportunities</p>
-    </div>
-
-    <div class="row g-5 align-items-stretch">
-
-      <!-- Contact Info + Map -->
-      <div class="col-lg-5">
-        <div class="contact-info h-100 d-flex flex-column">
-
-          <!-- Email -->
-          <div class="info-item d-flex align-items-center mb-4">
-            <div class="icon-box me-3 text-primary">
-              <i class="bx bxs-envelope" style="font-size: 1.8rem;"></i>
-            </div>
-            <div>
-              <h5 class="mb-1">Email</h5>
-              <p><a href="mailto:mehyar.mlaweh@dauphine.eu" class="text-decoration-none">mehyar.mlaweh@dauphine.eu</a></p>
-            </div>
-          </div>
-
-          <!-- Location -->
-          <div class="info-item d-flex align-items-center mb-4">
-            <div class="icon-box me-3 text-primary">
-              <i class="bx bxs-map" style="font-size: 1.8rem;"></i>
-            </div>
-            <div>
-              <h5 class="mb-1">Location</h5>
-              <p>Paris, France</p>
-            </div>
-          </div>
-
-          <!-- Social Links -->
-          <div class="social-links mt-4 mb-4">
-            <a href="https://linkedin.com/in/mehyar-mlaweh" target="_blank" class="linkedin"><i class="bx bxl-linkedin"></i></a>
-            <a href="https://x.com/MehyarMlaweh" target="_blank" class="twitter"><i class="bx bxl-twitter"></i></a>
-            <a href="https://github.com/mehyarmlaweh" target="_blank" class="github"><i class="bx bxl-github"></i></a>
-            <a href="https://www.upwork.com/freelancers/~0128b14d14dfc2b85d" target="_blank" class="upwork"><i class="bx bxl-upwork"></i></a>
-          </div>
-
-          <!-- Mini Map -->
-          <div class="mt-auto">
-            <iframe 
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d83998.75785006683!2d2.2775177393698213!3d48.85883773936967!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e1f06c2c2c9%3A0xc5c6e2b6f3b8d3a!2sParis%2C%20France!5e0!3m2!1sen!2sfr!4v1731260000000!5m2!1sen!2sfr"
-              width="100%" 
-              height="180" 
-              style="border:0; border-radius:8px;" 
-              allowfullscreen="" 
-              loading="lazy" 
-              referrerpolicy="no-referrer-when-downgrade">
-            </iframe>
-          </div>
-
-        </div>
-      </div>
-
-      <!-- Calendly Booking -->
-      <div class="col-lg-7">
-        <div class="calendly-wrapper bg-white p-3 rounded shadow-sm h-100 d-flex flex-column">
-          <h5 class="text-center mb-3">Book a 30-min Call</h5>
-          <div class="calendly-inline-widget" data-url="https://calendly.com/mehyarmlaweh0/30min" style="min-width:320px;height:700px;flex:1;"></div>
-        </div>
-      </div>
-
-    </div>
-
-  </div>
-</section>
-
-<!-- Calendly Script (Load Once) -->
-<script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
+    </section>
   </main>
 
   <!-- ======= Footer ======= -->
-  <footer id="footer">
-    <div class="container">
-      <div class="copyright">
-        © <strong>Mehyar Mlaweh</strong> — All Rights Reserved
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p>© <span data-year>2026</span> Mehyar Mlaweh. Designed &amp; built in Paris.</p>
+      <div class="socials">
+        <a href="https://github.com/mehyarmlaweh" target="_blank" rel="noopener" aria-label="GitHub"><svg class="icon" aria-hidden="true"><use href="#i-github"/></svg></a>
+        <a href="https://www.linkedin.com/in/mehyar-mlaweh" target="_blank" rel="noopener" aria-label="LinkedIn"><svg class="icon" aria-hidden="true"><use href="#i-linkedin"/></svg></a>
+        <a href="https://www.kaggle.com/mehyarmlaweh" target="_blank" rel="noopener" aria-label="Kaggle"><svg class="icon" aria-hidden="true"><use href="#i-kaggle"/></svg></a>
+        <a href="https://x.com/MehyarMlaweh" target="_blank" rel="noopener" aria-label="X (Twitter)"><svg class="icon" aria-hidden="true"><use href="#i-x"/></svg></a>
+        <a href="https://www.upwork.com/freelancers/~0128b14d14dfc2b85d" target="_blank" rel="noopener" aria-label="Upwork"><svg class="icon" aria-hidden="true"><use href="#i-upwork"/></svg></a>
       </div>
+      <a class="link" href="#hero">Back to top <svg class="icon" aria-hidden="true"><use href="#i-arrow-up"/></svg></a>
     </div>
   </footer>
 
-  <!-- Back to top -->
-  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bx bx-up-arrow-alt"></i></a>
-
-  <!-- Preloader -->
-  <div id="preloader"></div>
-
-  <!-- Vendor JS -->
-  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
-  <script src="assets/vendor/aos/aos.js"></script>
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-<script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="assets/vendor/typed.js/typed.umd.js"></script>
-  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
-
-  <!-- Main JS -->
-  <script src="assets/js/main.js"></script>
-
-
-  
+  <script src="assets/js/main.js" defer></script>
 </body>
 </html>
