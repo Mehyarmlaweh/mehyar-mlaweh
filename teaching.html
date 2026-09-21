@@ -2,420 +2,207 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Teaching | Mehyar Mlaweh</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Deep Learning for Image Analysis · Teaching · Mehyar Mlaweh</title>
+  <meta name="description" content="Course resources for Deep Learning for Image Analysis (Master IASD, Université Paris-Dauphine – PSL): lecture slides, labs, solutions and reference books." />
+  <meta name="author" content="Mehyar Mlaweh" />
+  <link rel="canonical" href="https://mehyar-mlaweh.github.io/teaching.html" />
+  <meta name="theme-color" content="#FAFAF8" media="(prefers-color-scheme: light)" />
+  <meta name="theme-color" content="#0B0C0B" media="(prefers-color-scheme: dark)" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Deep Learning for Image Analysis · Mehyar Mlaweh" />
+  <meta property="og:description" content="Lecture slides, labs and notebooks for the Master IASD course at Université Paris-Dauphine – PSL." />
+  <meta property="og:image" content="https://mehyar-mlaweh.github.io/assets/img/og-image.png" />
+  <meta name="twitter:card" content="summary_large_image" />
 
-    <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon" />
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml" />
+  <link rel="icon" href="assets/img/favicon-32.png" sizes="32x32" type="image/png" />
+  <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png" />
 
-  <!-- Vendor CSS -->
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet" />
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
-  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet" />
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
 
-  <!-- Main CSS -->
-  <link href="assets/css/style.css" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/style.css" />
 
-  <style>
-    .teaching-page { min-height: 100vh; }
-    .teaching-hero { padding: 80px 0 60px; }
-
-    .teaching-card{
-      background:#fff;
-      border-radius:14px;
-      padding:22px;
-      box-shadow:0 8px 24px rgba(0,0,0,0.06);
-      max-width: 980px;
-      margin: 0 auto;
-    }
-
-    .mini-badges .badge { font-weight: 600; }
-
-    .course-card{
-      border:1px solid rgba(0,0,0,0.08);
-      border-radius:14px;
-      padding:16px;
-      background:#fff;
-      box-shadow:0 8px 20px rgba(0,0,0,0.04);
-    }
-
-    .resource-list a { text-decoration: none; }
-
-    .resource-item{
-      border:1px solid rgba(0,0,0,0.08);
-      border-radius:12px;
-      padding:14px 16px;
-      display:flex;
-      align-items:center;
-      justify-content:space-between;
-      gap:12px;
-      transition: all .15s ease;
-    }
-/* Mobile fix: allow lecture titles to wrap nicely */
-@media (max-width: 768px) {
-  .resource-title {
-    white-space: normal;      /* allow wrapping */
-    overflow: visible;
-    text-overflow: unset;
-    max-width: 100%;
-    line-height: 1.3;
-  }
-}
-@media (max-width: 768px) {
-  .resource-item {
-    padding: 16px;
-  }
-}
-
-    .resource-item:hover{
-      box-shadow:0 8px 18px rgba(0,0,0,0.06);
-      transform: translateY(-1px);
-    }
-
-    .resource-meta{
-      display:flex;
-      align-items:center;
-      gap:12px;
-      min-width: 0;
-    }
-
-    .resource-icon{
-      width:42px;
-      height:42px;
-      border-radius:10px;
-      display:flex;
-      align-items:center;
-      justify-content:center;
-      background: rgba(0,0,0,0.04);
-      flex: 0 0 auto;
-      font-size: 20px;
-    }
-
-    .resource-title{
-      font-weight: 700;
-      line-height: 1.15;
-      margin-bottom: 2px;
-      white-space: nowrap;
-      overflow: hidden;
-      text-overflow: ellipsis;
-      max-width: 640px;
-    }
-
-    .resource-sub{
-      font-size: 0.88rem;
-    }
-
-    .section-divider{
-      height:1px;
-      background: rgba(0,0,0,0.08);
-      margin: 18px 0;
-    }
-  </style>
+  <script>
+    document.documentElement.classList.add("js");
+    try {
+      var t = localStorage.getItem("mm-theme");
+      if (t === "light" || t === "dark") document.documentElement.setAttribute("data-theme", t);
+    } catch (e) {}
+  </script>
 </head>
 
 <body>
-  <!-- Mobile Nav Toggle -->
-  <i class="bx bx-menu mobile-nav-toggle d-lg-none"></i>
+  <!-- ======= Icon sprite ======= -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+    <defs>
+      <symbol id="i-arrow-left" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M11 6l-6 6 6 6"/></symbol>
+      <symbol id="i-arrow-up" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V5M6 11l6-6 6 6"/></symbol>
+      <symbol id="i-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2.5v2M12 19.5v2M4.6 4.6 6 6M18 18l1.4 1.4M2.5 12h2M19.5 12h2M4.6 19.4 6 18M18 6l1.4-1.4"/></symbol>
+      <symbol id="i-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5Z"/></symbol>
+      <symbol id="i-menu" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M4 9h16M4 15h16"/></symbol>
+      <symbol id="i-close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M6 6l12 12M18 6 6 18"/></symbol>
+      <symbol id="i-slides" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="12" rx="2"/><path d="M8 20l4-4 4 4"/></symbol>
+      <symbol id="i-flask" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 3h6M10 3v6L4.8 18.2A1.9 1.9 0 0 0 6.5 21h11a1.9 1.9 0 0 0 1.7-2.8L14 9V3"/><path d="M7.5 14h9"/></symbol>
+      <symbol id="i-book" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19V5.5A2.5 2.5 0 0 1 6.5 3H20v15H6.5A2.5 2.5 0 0 0 4 20.5 2.5 2.5 0 0 0 6.5 23H20v-5"/></symbol>
+      <symbol id="i-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m9 11 3 3 8-8"/><path d="M20 12v6a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h9"/></symbol>
+      <symbol id="i-clock" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></symbol>
+      <symbol id="i-mail" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2.5"/><path d="m3.5 7 8.5 6 8.5-6"/></symbol>
+    </defs>
+  </svg>
 
-  <!-- ======= Header ======= -->
-  <header id="header" class="d-flex flex-column justify-content-center">
-    <nav id="navbar" class="navbar nav-menu">
-      <ul>
-        <li>
-          <a href="index.html#hero" class="nav-link scrollto">
-            <i class="bx bx-home"></i>
-            <span>Home</span>
-          </a>
-        </li>
+  <a class="skip-link" href="#main">Skip to content</a>
 
-        <li>
-          <a href="index.html#contact" class="nav-link scrollto">
-            <i class="bx bx-envelope"></i>
-            <span>Contact</span>
-          </a>
-        </li>
-      </ul>
-    </nav>
+  <!-- ======= Navigation ======= -->
+  <header class="nav" id="nav">
+    <div class="container nav-inner">
+      <a class="brand" href="index.html" aria-label="Mehyar Mlaweh, home">
+        <svg class="brand-mark" viewBox="0 0 32 32" aria-hidden="true"><rect class="brand-bg" width="32" height="32" rx="9"/><path class="brand-m" d="M9 22.5V10l7 8.5 7-8.5v12.5"/><circle class="brand-dot" cx="16" cy="18.5" r="2.4"/></svg>
+        <span>Mehyar Mlaweh</span>
+      </a>
+
+      <nav class="nav-links" id="nav-links" aria-label="Primary">
+        <a href="index.html#about">About</a>
+        <a href="index.html#research">Research</a>
+        <a href="index.html#projects">Work</a>
+        <a href="index.html#services">Services</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="icon-btn theme-toggle" type="button" aria-label="Toggle dark mode">
+          <svg class="icon i-moon" aria-hidden="true"><use href="#i-moon"/></svg>
+          <svg class="icon i-sun" aria-hidden="true"><use href="#i-sun"/></svg>
+        </button>
+        <a class="btn btn-primary btn-sm" href="index.html#contact">Contact</a>
+        <button class="icon-btn nav-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="nav-links">
+          <svg class="icon i-menu" aria-hidden="true"><use href="#i-menu"/></svg>
+          <svg class="icon i-close" aria-hidden="true"><use href="#i-close"/></svg>
+        </button>
+      </div>
+    </div>
+    <div class="progress" aria-hidden="true"></div>
   </header>
-  <!-- End Header -->
 
-  <main id="main" class="teaching-page">
-    <section class="teaching-hero">
-      <div class="container" data-aos="fade-up">
+  <main id="main">
+    <!-- ======= Course header ======= -->
+    <section class="page-hero">
+      <div class="container">
+        <a class="back-link" href="index.html#research"><svg class="icon" aria-hidden="true"><use href="#i-arrow-left"/></svg>Back to portfolio</a>
 
-        <div class="section-title text-center mb-4">
-          <h2>Teaching</h2>
-          <p>Course resources, labs (TPs), and notebooks</p>
+        <p class="eyebrow" data-reveal><span class="num">Teaching</span><span class="rule"></span>2026 – 2027</p>
+        <h1 class="course-title" data-reveal style="--d:1">Deep Learning for <em>Image Analysis</em></h1>
+        <p class="course-lead" data-reveal style="--d:2">
+          Master IASD (apprenticeship track), Université Paris-Dauphine – PSL.
+          Lecture slides, labs (TPs), notebooks and solutions for this year will be published here as the course progresses.
+        </p>
+
+        <!-- Counts update themselves; a list with no items shows "Soon". -->
+        <div class="stats course-stats" data-reveal style="--d:3">
+          <div class="stat"><p class="stat-value" data-tally="list-lectures" data-empty="Soon">Soon</p><p class="stat-label">lectures</p></div>
+          <div class="stat"><p class="stat-value" data-tally="list-labs" data-empty="Soon">Soon</p><p class="stat-label">labs</p></div>
+          <div class="stat"><p class="stat-value" data-tally="list-solutions" data-empty="Soon">Soon</p><p class="stat-label">solutions</p></div>
+          <div class="stat"><p class="stat-value" data-tally="list-books">2</p><p class="stat-label">reference books</p></div>
         </div>
-
-        <div class="teaching-card" data-aos="fade-up" data-aos-delay="100">
-
-          <!-- ======= Course 1 ======= -->
-          <div class="course-card mb-4">
-            <div class="d-flex flex-column flex-md-row justify-content-between gap-3">
-              <div>
-                <h4 class="mb-1">Master IASD (Apprenticeship) — Université Paris-Dauphine – PSL</h4>
-                <p class="mb-2">
-                  <strong>Course:</strong> Deep Learning for Image Analysis
-                </p>
-
-                <div class="mini-badges d-flex flex-wrap gap-2">
-                  <span class="badge bg-primary"><i class="bx bx-calendar"></i> 2025–2026</span>
-                  <span class="badge bg-success"><i class="bx bx-image"></i> Computer Vision</span>
-                </div>
-              </div>
-
-
-            </div>
-
-            <div class="section-divider"></div>
-
-<h6 class="mb-3">Resources</h6>
-
-<div class="resource-list d-grid gap-3">
-
-  <!-- Reference Books -->
-  <h6 class="mt-2 mb-1 text-uppercase text-muted">Reference Books</h6>
-
-  <a class="resource-item" href="assets/docs/teaching/m2iasdapp/books/Dive%20into%20Deep%20learning%20-%202022.pdf" target="_blank" rel="noopener">
-    <div class="resource-meta">
-      <div class="resource-icon"><i class="bx bxs-book"></i></div>
-      <div style="min-width:0;">
-        <div class="resource-title">Dive into Deep Learning 1.0.3 - ASTON ZHANG</div>
-        <div class="text-muted resource-sub">Book (PDF)</div>
       </div>
-    </div>
-    <div class="text-muted small"><i class="bx bx-link-external"></i></div>
-  </a>
+    </section>
 
-  <a class="resource-item" href="assets/docs/teaching/m2iasdapp/books/Computer%20Vision-%20Richard%20Szeliski-2010.pdf" target="_blank" rel="noopener">
-    <div class="resource-meta">
-      <div class="resource-icon"><i class="bx bxs-book"></i></div>
-      <div style="min-width:0;">
-        <div class="resource-title">Computer Vision : Algorithms and Applications — Richard Szeliski (2010)</div>
-        <div class="text-muted resource-sub">Book (PDF)</div>
-      </div>
-    </div>
-    <div class="text-muted small"><i class="bx bx-link-external"></i></div>
-  </a>
-                <!-- Lectures -->
-<!-- Lectures -->
-<h6 class="mt-2 mb-1 text-uppercase text-muted">Lectures</h6>
+    <!-- ======= Resources =======
+         To publish a lecture, lab or solution: paste an <a class="res"> block (template in each
+         list below) inside the right list, then set its href and title. The "Coming soon" note
+         disappears automatically once a list has at least one item, and numbering and counts
+         update themselves. -->
+    <section class="res-section">
+      <div class="container">
+        <div class="res-layout">
 
-<a class="resource-item" href="assets/docs/teaching/m2iasdapp/Lectures/Lecture_1_Deep_Learning_for_Image_Analysis.pdf" target="_blank" rel="noopener">
-  <div class="resource-meta">
-    <div class="resource-icon"><i class="bx bxs-file-pdf"></i></div>
-    <div style="min-width:0;">
-      <div class="resource-title">Lecture 1 — Computer Vision Foundations</div>
-      <div class="text-muted resource-sub">Slides (PDF)</div>
-    </div>
-  </div>
-  <div class="text-muted small"><i class="bx bx-link-external"></i></div>
-</a>
-
-<a class="resource-item" href="assets/docs/teaching/m2iasdapp/Lectures/Lecture_2_1_Convolutional_neural_networks.pdf" target="_blank" rel="noopener">
-  <div class="resource-meta">
-    <div class="resource-icon"><i class="bx bxs-file-pdf"></i></div>
-    <div style="min-width:0;">
-      <div class="resource-title">Lecture 2-Part 1 — Convolutional Neural Networks</div>
-      <div class="text-muted resource-sub">Slides (PDF)</div>
-    </div>
-  </div>
-  <div class="text-muted small"><i class="bx bx-link-external"></i></div>
-</a>
-<a class="resource-item" href="assets/docs/teaching/m2iasdapp/Lectures/Lecture_2_2_CNNs_architectures.pdf" target="_blank" rel="noopener">
-  <div class="resource-meta">
-    <div class="resource-icon"><i class="bx bxs-file-pdf"></i></div>
-    <div style="min-width:0;">
-      <div class="resource-title">Lecture 2-Part 2 — CNNs Architectures</div>
-      <div class="text-muted resource-sub">Slides (PDF)</div>
-    </div>
-  </div>
-  <div class="text-muted small"><i class="bx bx-link-external"></i></div>
-</a>
-
-<a class="resource-item" href="assets/docs/teaching/m2iasdapp/Lectures/Lecture_3_Transfer_Learning.pdf" target="_blank" rel="noopener">
-  <div class="resource-meta">
-    <div class="resource-icon"><i class="bx bxs-file-pdf"></i></div>
-    <div style="min-width:0;">
-      <div class="resource-title">Lecture 3 — Transfer Learning</div>
-      <div class="text-muted resource-sub">Slides (PDF)</div>
-    </div>
-  </div>
-  <div class="text-muted small"><i class="bx bx-link-external"></i></div>
-</a>
-
-
-<a class="resource-item" href="assets/docs/teaching/m2iasdapp/Lectures/Lecture_4_Vision_Transfomers.pdf" target="_blank" rel="noopener">
-  <div class="resource-meta">
-    <div class="resource-icon"><i class="bx bxs-file-pdf"></i></div>
-    <div style="min-width:0;">
-      <div class="resource-title">Lecture 4 — Vision Transformers</div>
-      <div class="text-muted resource-sub">Slides (PDF)</div>
-    </div>
-  </div>
-  <div class="text-muted small"><i class="bx bx-link-external"></i></div>
-</a>
-
-<a class="resource-item" href="assets/docs/teaching/m2iasdapp/Lectures/Lecture_5_Object_Detection.pdf" target="_blank" rel="noopener">
-  <div class="resource-meta">
-    <div class="resource-icon"><i class="bx bxs-file-pdf"></i></div>
-    <div style="min-width:0;">
-      <div class="resource-title">Lecture 5 — Object Detection</div>
-      <div class="text-muted resource-sub">Slides (PDF)</div>
-    </div>
-  </div>
-  <div class="text-muted small"><i class="bx bx-link-external"></i></div>
-</a>
-
-
-<a class="resource-item" href="assets/docs/teaching/m2iasdapp/Lectures/Lecture_6_Segment_Anything_Model.pdf" target="_blank" rel="noopener">
-  <div class="resource-meta">
-    <div class="resource-icon"><i class="bx bxs-file-pdf"></i></div>
-    <div style="min-width:0;">
-      <div class="resource-title">Lecture 6 —  Segmentation</div>
-      <div class="text-muted resource-sub">Slides (PDF)</div>
-    </div>
-  </div>
-  <div class="text-muted small"><i class="bx bx-link-external"></i></div>
-</a>
-
-
+          <!-- Lectures -->
+          <div class="card res-group" data-reveal>
+            <div class="res-group-head">
+              <h2><svg class="icon" aria-hidden="true"><use href="#i-slides"/></svg>Lectures</h2>
+              <span class="tag">Slides · PDF</span>
             </div>
-
-<h6 class="mt-4 mb-1 text-uppercase text-muted">Labs</h6>
-
-<a class="resource-item" href="assets/docs/teaching/m2iasdapp/Labs/Lab1.zip" target="_blank" rel="noopener">
-  <div class="resource-meta">
-    <div class="resource-icon"><i class="bx bxs-file-archive"></i></div>
-    <div style="min-width:0;">
-      <div class="resource-title">Lab 1</div>
-      <div class="text-muted resource-sub">Notebook + instructions (ZIP)</div>
-    </div>
-  </div>
-  <div class="text-muted small"><i class="bx bx-link-external"></i></div>
-</a>
-
-<a class="resource-item" href="assets/docs/teaching/m2iasdapp/Labs/Lab 2.zip" target="_blank" rel="noopener">
-  <div class="resource-meta">
-    <div class="resource-icon"><i class="bx bxs-file-archive"></i></div>
-    <div style="min-width:0;">
-      <div class="resource-title">Lab 2</div>
-      <div class="text-muted resource-sub">Notebook + instructions (ZIP)</div>
-    </div>
-  </div>
-  <div class="text-muted small"><i class="bx bx-link-external"></i></div>
-</a>
-<a class="resource-item" href="assets/docs/teaching/m2iasdapp/Labs/Lab 3.zip" target="_blank" rel="noopener">
-  <div class="resource-meta">
-    <div class="resource-icon"><i class="bx bxs-file-archive"></i></div>
-    <div style="min-width:0;">
-      <div class="resource-title">Lab 3</div>
-      <div class="text-muted resource-sub">Notebook + instructions (ZIP)</div>
-    </div>
-  </div>
-  <div class="text-muted small"><i class="bx bx-link-external"></i></div>
-</a>
-
-<a class="resource-item" href="assets/docs/teaching/m2iasdapp/Labs/Lab4.zip" target="_blank" rel="noopener">
-  <div class="resource-meta">
-    <div class="resource-icon"><i class="bx bxs-file-archive"></i></div>
-    <div style="min-width:0;">
-      <div class="resource-title">Lab 4</div>
-      <div class="text-muted resource-sub">Github Repository</div>
-    </div>
-  </div>
-  <div class="text-muted small"><i class="bx bx-link-external"></i></div>
-</a>
-
-<a class="resource-item" href="assets/docs/teaching/m2iasdapp/Labs/lab5.zip" target="_blank" rel="noopener">
-  <div class="resource-meta">
-    <div class="resource-icon"><i class="bx bxs-file-archive"></i></div>
-    <div style="min-width:0;">
-      <div class="resource-title">Lab 5</div>
-      <div class="text-muted resource-sub">Notebook + instructions (ZIP)</div>
-    </div>
-  </div>
-  <div class="text-muted small"><i class="bx bx-link-external"></i></div>
-</a>
-
-<a class="resource-item" href="assets/docs/teaching/m2iasdapp/Labs/Lab6.zip" target="_blank" rel="noopener">
-  <div class="resource-meta">
-    <div class="resource-icon"><i class="bx bxs-file-archive"></i></div>
-    <div style="min-width:0;">
-      <div class="resource-title">Lab 6</div>
-      <div class="text-muted resource-sub">Notebook + instructions (ZIP)</div>
-    </div>
-  </div>
-  <div class="text-muted small"><i class="bx bx-link-external"></i></div>
-</a>
-
-<a class="resource-item" href="assets/docs/teaching/m2iasdapp/Labs/Lab7.zip" target="_blank" rel="noopener">
-  <div class="resource-meta">
-    <div class="resource-icon"><i class="bx bxs-file-archive"></i></div>
-    <div style="min-width:0;">
-      <div class="resource-title">Lab 7</div>
-      <div class="text-muted resource-sub">Notebook + instructions (ZIP)</div>
-    </div>
-  </div>
-  <div class="text-muted small"><i class="bx bx-link-external"></i></div>
-</a>
-
-<a class="resource-item" href="assets/docs/teaching/m2iasdapp/Labs/lab8.zip" target="_blank" rel="noopener">
-  <div class="resource-meta">
-    <div class="resource-icon"><i class="bx bxs-file-archive"></i></div>
-    <div style="min-width:0;">
-      <div class="resource-title">Lab 8</div>
-      <div class="text-muted resource-sub">Notebook + instructions (ZIP)</div>
-    </div>
-  </div>
-  <div class="text-muted small"><i class="bx bx-link-external"></i></div>
-</a>
-
-<!-- Solutions -->
-<h6 class="mt-4 mb-1 text-uppercase text-muted">Solutions</h6>
-
-<a class="resource-item" href="assets/docs/teaching/m2iasdapp/Labs/Lab1%20Solutions.zip" target="_blank" rel="noopener">
-  <div class="resource-meta">
-    <div class="resource-icon"><i class="bx bxs-check-square"></i></div>
-    <div style="min-width:0;">
-      <div class="resource-title">Lab 1 — Solutions</div>
-    </div>
-  </div>
-  <div class="text-muted small"><i class="bx bx-link-external"></i></div>
-</a>
+            <div class="res-list" id="list-lectures">
+              <p class="res-empty">
+                <svg class="icon" aria-hidden="true"><use href="#i-clock"/></svg>
+                <span><b>Coming soon</b>Lecture slides will be published here as the course progresses.</span>
+              </p>
+              <!-- Template:
+              <a class="res" href="assets/docs/teaching/m2iasdapp/Lectures/FILE_NAME.pdf" target="_blank" rel="noopener">
+                <span><span class="res-title">Lecture title</span><span class="res-meta">Lecture 1</span></span>
+              </a>
+              -->
+            </div>
           </div>
 
+          <!-- Labs -->
+          <div class="card res-group" data-reveal style="--d:1">
+            <div class="res-group-head">
+              <h2><svg class="icon" aria-hidden="true"><use href="#i-flask"/></svg>Labs</h2>
+              <span class="tag">Notebooks · ZIP</span>
+            </div>
+            <div class="res-list res-list--download" id="list-labs">
+              <p class="res-empty">
+                <svg class="icon" aria-hidden="true"><use href="#i-clock"/></svg>
+                <span><b>Coming soon</b>Lab notebooks and instructions will be published here as the course progresses.</span>
+              </p>
+              <!-- Template:
+              <a class="res" href="assets/docs/teaching/m2iasdapp/Labs/FILE_NAME.zip" download>
+                <span><span class="res-title">Lab 1</span><span class="res-meta">Notebook + instructions</span></span>
+              </a>
+              -->
+            </div>
+          </div>
+
+          <!-- Reference books -->
+          <div class="card res-group" data-reveal>
+            <div class="res-group-head">
+              <h2><svg class="icon" aria-hidden="true"><use href="#i-book"/></svg>Reference books</h2>
+              <span class="tag">PDF</span>
+            </div>
+            <div class="res-list" id="list-books">
+              <a class="res" href="assets/docs/teaching/m2iasdapp/books/Dive%20into%20Deep%20learning%20-%202022.pdf" target="_blank" rel="noopener">
+                <span><span class="res-title">Dive into Deep Learning 1.0.3</span><span class="res-meta">Aston Zhang et al.</span></span>
+              </a>
+              <a class="res" href="assets/docs/teaching/m2iasdapp/books/Computer%20Vision-%20Richard%20Szeliski-2010.pdf" target="_blank" rel="noopener">
+                <span><span class="res-title">Computer Vision: Algorithms and Applications</span><span class="res-meta">Richard Szeliski · 2010</span></span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Solutions -->
+          <div class="card res-group" data-reveal style="--d:1">
+            <div class="res-group-head">
+              <h2><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg>Solutions</h2>
+              <span class="tag">ZIP</span>
+            </div>
+            <div class="res-list res-list--download" id="list-solutions">
+              <p class="res-empty">
+                <svg class="icon" aria-hidden="true"><use href="#i-clock"/></svg>
+                <span><b>Coming soon</b>Lab solutions will be published here as the course progresses.</span>
+              </p>
+              <!-- Template:
+              <a class="res" href="assets/docs/teaching/m2iasdapp/Labs/FILE_NAME.zip" download>
+                <span><span class="res-title">Lab 1 · Solutions</span><span class="res-meta">Notebook</span></span>
+              </a>
+              -->
+            </div>
+          </div>
 
         </div>
-        
       </div>
     </section>
   </main>
 
   <!-- ======= Footer ======= -->
-  <footer id="footer">
-    <div class="container">
-      <div class="copyright">
-        © <strong>Mehyar Mlaweh</strong> — All Rights Reserved
-      </div>
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p>© <span data-year>2026</span> Mehyar Mlaweh · <a class="link" href="mailto:mehyar.mlaweh@dauphine.eu">mehyar.mlaweh@dauphine.eu</a></p>
+      <a class="link" href="#main">Back to top <svg class="icon" aria-hidden="true"><use href="#i-arrow-up"/></svg></a>
     </div>
   </footer>
 
-  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bx bx-up-arrow-alt"></i></a>
-  <div id="preloader"></div>
-
-  <!-- Vendor JS -->
-  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
-  <script src="assets/vendor/aos/aos.js"></script>
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-
-  <!-- Main JS -->
-  <script src="assets/js/main.js"></script>
+  <script src="assets/js/main.js" defer></script>
 </body>
 </html>
