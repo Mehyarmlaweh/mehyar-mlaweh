@@ -2895,6 +2895,41 @@ strong {
   color: var(--ink-3);
 }
 
+/* Placeholder shown until a list gets its first item */
+.res-empty {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  margin: 6px 4px 4px;
+  padding: 18px 16px;
+  border: 1px dashed var(--line-strong);
+  border-radius: 12px;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  color: var(--ink-3);
+}
+
+.res-empty .icon {
+  width: 18px;
+  height: 18px;
+  margin-top: 2px;
+  color: var(--accent);
+}
+
+.res-empty b {
+  display: block;
+  font-weight: 600;
+  color: var(--ink);
+}
+
+.res-list:has(.res) .res-empty {
+  display: none;
+}
+
+.stat-value.is-soon {
+  color: var(--ink-3);
+}
+
 /* --------------------------------------------------------------------------
    Responsive
    -------------------------------------------------------------------------- */

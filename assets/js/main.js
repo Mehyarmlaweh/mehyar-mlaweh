@@ -385,7 +385,11 @@
      ------------------------------------------------------------------ */
   $$("[data-tally]").forEach((el) => {
     const list = document.getElementById(el.dataset.tally);
-    if (list) el.textContent = String($$(".res", list).length);
+    if (!list) return;
+    const count = $$(".res", list).length;
+    const empty = count === 0 && el.dataset.empty;
+    el.textContent = empty ? el.dataset.empty : String(count);
+    el.classList.toggle("is-soon", Boolean(empty));
   });
 
   /* Footer year */
