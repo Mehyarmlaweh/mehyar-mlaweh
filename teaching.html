@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Deep Learning for Image Analysis · Teaching · Mehyar Mlaweh</title>
-  <meta name="description" content="Course resources for Deep Learning for Image Analysis (Master IASD, Université Paris-Dauphine – PSL): lecture slides, labs, solutions and reference books." />
+  <meta name="description" content="Course resources for Deep Learning for Image Analysis (Master IASD, Université Paris-Dauphine – PSL): lecture slides, labs and reference books." />
   <meta name="author" content="Mehyar Mlaweh" />
   <link rel="canonical" href="https://mehyar-mlaweh.github.io/teaching.html" />
   <meta name="theme-color" content="#FAFAF8" media="(prefers-color-scheme: light)" />
@@ -95,24 +95,23 @@
         <h1 class="course-title" data-reveal style="--d:1">Deep Learning for <em>Image Analysis</em></h1>
         <p class="course-lead" data-reveal style="--d:2">
           Master IASD (apprenticeship track), Université Paris-Dauphine – PSL.
-          Lecture slides, labs (TPs), notebooks and solutions for this year will be published here as the course progresses.
+          Lecture slides, labs (TPs) and notebooks for this year will be published here as the course progresses.
         </p>
 
         <!-- Counts update themselves; a list with no items shows "Soon". -->
         <div class="stats course-stats" data-reveal style="--d:3">
           <div class="stat"><p class="stat-value" data-tally="list-lectures" data-empty="Soon">Soon</p><p class="stat-label">lectures</p></div>
           <div class="stat"><p class="stat-value" data-tally="list-labs" data-empty="Soon">Soon</p><p class="stat-label">labs</p></div>
-          <div class="stat"><p class="stat-value" data-tally="list-solutions" data-empty="Soon">Soon</p><p class="stat-label">solutions</p></div>
-          <div class="stat"><p class="stat-value" data-tally="list-books">2</p><p class="stat-label">reference books</p></div>
+          <div class="stat"><p class="stat-value" data-tally="list-books">14</p><p class="stat-label">reference books</p></div>
         </div>
       </div>
     </section>
 
     <!-- ======= Resources =======
-         To publish a lecture, lab or solution: paste an <a class="res"> block (template in each
+         To publish a lecture or a lab: paste an <a class="res"> block (template in each
          list below) inside the right list, then set its href and title. The "Coming soon" note
          disappears automatically once a list has at least one item, and numbering and counts
-         update themselves. -->
+         update themselves. Books link to their official pages (never re-host a book PDF). -->
     <section class="res-section">
       <div class="container">
         <div class="res-layout">
@@ -155,38 +154,75 @@
             </div>
           </div>
 
-          <!-- Reference books -->
-          <div class="card res-group" data-reveal>
+          <!-- Reference books: one wide card, one column per category.
+               Every link goes to the official page (author or publisher); "free" = free legal copy there. -->
+          <div class="card res-group res-group--wide" data-reveal>
             <div class="res-group-head">
               <h2><svg class="icon" aria-hidden="true"><use href="#i-book"/></svg>Reference books</h2>
-              <span class="tag">PDF</span>
+              <span class="tag">Official pages</span>
             </div>
-            <div class="res-list" id="list-books">
-              <a class="res" href="assets/docs/teaching/m2iasdapp/books/Dive%20into%20Deep%20learning%20-%202022.pdf" target="_blank" rel="noopener">
-                <span><span class="res-title">Dive into Deep Learning 1.0.3</span><span class="res-meta">Aston Zhang et al.</span></span>
-              </a>
-              <a class="res" href="assets/docs/teaching/m2iasdapp/books/Computer%20Vision-%20Richard%20Szeliski-2010.pdf" target="_blank" rel="noopener">
-                <span><span class="res-title">Computer Vision: Algorithms and Applications</span><span class="res-meta">Richard Szeliski · 2010</span></span>
-              </a>
-            </div>
-          </div>
+            <div class="res-cats" id="list-books">
 
-          <!-- Solutions -->
-          <div class="card res-group" data-reveal style="--d:1">
-            <div class="res-group-head">
-              <h2><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg>Solutions</h2>
-              <span class="tag">ZIP</span>
-            </div>
-            <div class="res-list res-list--download" id="list-solutions">
-              <p class="res-empty">
-                <svg class="icon" aria-hidden="true"><use href="#i-clock"/></svg>
-                <span><b>Coming soon</b>Lab solutions will be published here as the course progresses.</span>
-              </p>
-              <!-- Template:
-              <a class="res" href="assets/docs/teaching/m2iasdapp/Labs/FILE_NAME.zip" download>
-                <span><span class="res-title">Lab 1 · Solutions</span><span class="res-meta">Notebook</span></span>
-              </a>
-              -->
+              <div class="res-cat">
+                <h3 class="res-cat-title">Deep learning</h3>
+                <div class="res-list">
+                  <a class="res" href="https://d2l.ai/" target="_blank" rel="noopener">
+                    <span><span class="res-title">Dive into Deep Learning</span><span class="res-meta">Zhang, Lipton, Li, Smola · Cambridge UP 2023 · free</span></span>
+                  </a>
+                  <a class="res" href="https://udlbook.github.io/udlbook/" target="_blank" rel="noopener">
+                    <span><span class="res-title">Understanding Deep Learning</span><span class="res-meta">S. J. D. Prince · MIT Press 2023 · free</span></span>
+                  </a>
+                  <a class="res" href="https://www.bishopbook.com/" target="_blank" rel="noopener">
+                    <span><span class="res-title">Deep Learning: Foundations and Concepts</span><span class="res-meta">C. M. Bishop, H. Bishop · Springer 2024 · free online</span></span>
+                  </a>
+                  <a class="res" href="https://www.deeplearningbook.org/" target="_blank" rel="noopener">
+                    <span><span class="res-title">Deep Learning</span><span class="res-meta">Goodfellow, Bengio, Courville · MIT Press 2016 · free online</span></span>
+                  </a>
+                  <a class="res" href="https://fleuret.org/francois/lbdl.html" target="_blank" rel="noopener">
+                    <span><span class="res-title">The Little Book of Deep Learning</span><span class="res-meta">F. Fleuret · 2023 · free, phone format</span></span>
+                  </a>
+                </div>
+              </div>
+
+              <div class="res-cat">
+                <h3 class="res-cat-title">Classical computer vision</h3>
+                <div class="res-list">
+                  <a class="res" href="https://szeliski.org/Book/" target="_blank" rel="noopener">
+                    <span><span class="res-title">Computer Vision: Algorithms and Applications, 2nd ed.</span><span class="res-meta">R. Szeliski · Springer 2022 · free</span></span>
+                  </a>
+                  <a class="res" href="https://www.robots.ox.ac.uk/~vgg/hzbook/" target="_blank" rel="noopener">
+                    <span><span class="res-title">Multiple View Geometry in Computer Vision, 2nd ed.</span><span class="res-meta">R. Hartley, A. Zisserman · Cambridge UP 2004</span></span>
+                  </a>
+                  <a class="res" href="https://www.pearson.com/en-au/subject-catalog/p/computer-vision-a-modern-approach-international-edition/P200000004217/9780273764144" target="_blank" rel="noopener">
+                    <span><span class="res-title">Computer Vision: A Modern Approach, 2nd ed.</span><span class="res-meta">D. A. Forsyth, J. Ponce · Pearson 2012</span></span>
+                  </a>
+                  <a class="res" href="https://www.imageprocessingplace.com/" target="_blank" rel="noopener">
+                    <span><span class="res-title">Digital Image Processing, 4th ed.</span><span class="res-meta">R. C. Gonzalez, R. E. Woods · Pearson 2018</span></span>
+                  </a>
+                </div>
+              </div>
+
+              <div class="res-cat">
+                <h3 class="res-cat-title">LLMs &amp; modern vision</h3>
+                <div class="res-list">
+                  <a class="res" href="https://visionbook.mit.edu/" target="_blank" rel="noopener">
+                    <span><span class="res-title">Foundations of Computer Vision</span><span class="res-meta">Torralba, Isola, Freeman · MIT Press 2024 · free online</span></span>
+                  </a>
+                  <a class="res" href="https://arxiv.org/abs/2309.10020" target="_blank" rel="noopener">
+                    <span><span class="res-title">Multimodal Foundation Models: From Specialists to General-Purpose Assistants</span><span class="res-meta">C. Li et al. · Found. Trends CGV 2024 · free</span></span>
+                  </a>
+                  <a class="res" href="https://web.stanford.edu/~jurafsky/slp3/" target="_blank" rel="noopener">
+                    <span><span class="res-title">Speech and Language Processing, 3rd ed. draft</span><span class="res-meta">D. Jurafsky, J. H. Martin · 2026 draft · free</span></span>
+                  </a>
+                  <a class="res" href="https://arxiv.org/abs/2501.09223" target="_blank" rel="noopener">
+                    <span><span class="res-title">Foundations of Large Language Models</span><span class="res-meta">T. Xiao, J. Zhu · arXiv 2025 · free</span></span>
+                  </a>
+                  <a class="res" href="https://www.manning.com/books/build-a-large-language-model-from-scratch" target="_blank" rel="noopener">
+                    <span><span class="res-title">Build a Large Language Model (From Scratch)</span><span class="res-meta">S. Raschka · Manning 2024 · code free on GitHub</span></span>
+                  </a>
+                </div>
+              </div>
+
             </div>
           </div>
 
