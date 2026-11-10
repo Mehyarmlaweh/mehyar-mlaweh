@@ -2930,6 +2930,44 @@ strong {
   color: var(--ink-3);
 }
 
+/* Reference books: one card across the grid, one column per category */
+.res-group--wide {
+  grid-column: 1 / -1;
+}
+
+.res-cats {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0 8px;
+  border-top: 1px solid var(--line);
+}
+
+.res-cat-title {
+  padding: 18px 14px 8px;
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  font-weight: 500;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+
+.res-cats .res-list {
+  border-top: 0;
+  padding-top: 0;
+}
+
+@media (max-width: 960px) {
+  .res-cats {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .res-cat + .res-cat {
+    border-top: 1px solid var(--line);
+    margin-top: 6px;
+  }
+}
+
 /* --------------------------------------------------------------------------
    Responsive
    -------------------------------------------------------------------------- */
