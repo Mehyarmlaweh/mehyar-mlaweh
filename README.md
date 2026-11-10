@@ -34,7 +34,7 @@ Passionate about **artificial intelligence and data science research**, I combin
 
 ## Let’s Connect  
 
-- **Portfolio**: [mehyar-mlaweh.github.io](https://mehyar-mlaweh.github.io)  
+- **Portfolio**: [mehyarmlaweh.github.io]https://mehyarmlaweh.github.io/mehyar-mlaweh/
 - **Book a 30-min Call**: [calendly.com/mehyarmlaweh0](https://calendly.com/mehyarmlaweh0/30min)  
 - **Download Full CV (PDF)**: [Mehyar_Mlaweh_CV.pdf](assets/pdf/Mehyar_Mlaweh_CV.pdf)  
 
